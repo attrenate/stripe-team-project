@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+     font-family: 'Inter', sans-serif;
+     background-color: #f9f9f9; 
+ }
+ 
+ .N-paralelogrami {
+     width: 100%;
+     height: 100vh; 
+     position: absolute;
+     top: 0; 
+     left: 0; 
+     background: linear-gradient(45deg, purple, orange, rgb(126, 196, 214));
+     clip-path: polygon(0 0, 100% 0, 100% 24%, 0 70%);
+     background-size: 200% 200%;
+     animation: moveGradient 5s linear infinite;;
+ }
+ 
+ 
+ 
+ .N-list {
+     position: relative;
+     text-align: center;
+ }
+ 
+ ul {
+     display: grid;
+     grid-template-columns: repeat(8, 1fr); 
+     gap: 10px;
+     padding: 0 20px;
+     list-style-type: none;
+     margin-top: 10px;
+ }
+ 
+ .N-nav-item1 {
+     font-size: 150%;
+     color: black;
+ }
+ 
+ .N-nav-item {
+     color: white;
+     font-size: large;
+ }
+ 
+ .N-header-button {
+     display: inline-block;
+ }
+ 
+ .N-header-buttons {
+     border: none;
+     border-radius: 19px;
+     padding: 10px 14px;
+     background-color: black;
+     color: white;
+     cursor: pointer;
+     transition: color 0.3s ease, opacity 0.3s ease; 
+ }
+ .N-header-buttons1{
+     border: none;
+     border-radius: 5px;
+     padding: 0 20px;
+     background-color: inherit; 
+     color: white;
+     cursor: pointer;
+     transition: color 0.3s ease, opacity 0.3s ease; 
+ 
+ }
+ 
+ .N-header-buttons:hover {
+     transform: scale(1.02);
+     color: rgba(255, 255, 255, 0);  
+     opacity: 0.5;     
+ }
+ .N-header-buttons1:hover {
+     transform: scale(1.02);
+     color: rgba(255, 255, 255, 0);  
+     opacity: 0.5;     
+ }
+ 
+  
+ 
+ .N-button {
+    position: relative;
+    margin-left: 150px; 
+    margin-top: 50px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    text-align: center;
+    color: white;
+    border-color: gainsboro;
+}
+
+ 
+ 
+ 
+ 
+.N-button {
+    position: relative;
+    margin-left: 150px; 
+    margin-top: 50px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: gainsboro;
+    text-align: center;
+    color: white;
+    border-color: gainsboro;
+}
+
+.N-title {
+    position: relative;
+    font-size: 4rem;
+    margin-left: 10%;
+    margin-top: 20px; 
+}
+#text {
+    position: relative; 
+    margin-left: 10%;
+     margin-top: 3%;
+     font-size: 1.1rem;
+ }
+
+ 
+ 
+
+
+.N-search-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+#N-search {
+    border-radius: 15px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px; 
+    padding-right: 80px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+}
+
+.N-search-button {
+    position: absolute; 
+    right: 15px; /
+    top: 50%; 
+    transform: translateY(10%); 
+    
+    height: 35px;
+    background-color: #00b5e2; 
+    color: white; 
+    border: none; 
+    border-radius: 15px; 
+    padding: 5px 15px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    font-weight: bold; 
+}
+
+.N-search-button:hover {
+    background-color: #009bb5; /
+}
+
+#N-search::placeholder {
+    color: #aaa; 
+}
+
+ 
+ .N-icons {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /
+     gap: 15px;
+     max-width: fit-content;
+     margin: 20px auto;
+ }
+ 
+ .N-container{
+     width: 800px;
+     margin-left: 400px;
+     
+ 
+ 
+ }
+ .N-icon {
+     width: 50%;
+     height: auto;
+ }
+ 
+ 
+ 
+ .N-button:hover {
+     transform: scale(1.01);
+ }
+ .N-phone-background-fade{
+    position: absolute;
+    background-color: gainsboro;
+    width: 400px;
+    height: 500px;
+    margin-top: 2rem;
+    margin-left: 70rem;
+    opacity: 0.7;
+    border-radius: 10px;
+    z-index: 1;
+ }
+ .N-phone{
+    position: absolute;
+    width: 250px;
+    height: 500px;
+    
+    background-color: whitesmoke;
+   
+    border-radius: 10px;
+    margin-left: 62rem;
+    z-index: 2;
+    margin-top: 5rem;
+ }
+ .N-screen{
+    position: relative;
+    width: 230px;
+    height: 580px;
+    
+    background-color: whitesmoke;
+   
+    border-radius: 10px;
+    
+    z-index: 3;
+    border-color: black;
+
+ }
+ .N-rocket{
+    position: absolute;
+    color: black;
+    font-family: 'Inter', sans-serif;
+    margin-left: 63rem;
+    z-index: 3;
+    
+ }
+ #rocket-search{
+    border-radius: 4px;
+ }
+
+
+ 
+ 
+ /* For screens that are smaller than 1200px */
+ @media (max-width: 1200px) {
+     .ul {
+         grid-template-columns: repeat(5, 1fr); 
+     }
+     .N-title {
+         font-size: 2.5rem; 
+         margin-left: 5%;  
+     }
+     #text {
+         font-size: 1rem; 
+         margin-left: 5%;
+     }
+     #N-search {
+         width: 250px;
+     }
+ }
+ 
+ /* For screens smaller than 768px (Mobile/Tablets) */
+ @media (max-width: 768px) {
+     ul {
+         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     }
+     .N-title {
+         font-size: 1.8rem;
+         margin-left: 5%;
+     }
+     #text {
+         font-size: 0.9rem;
+         margin-left: 5%;
+     }
+     .N-button {
+        width: 30%;
+     }
+     #N-search {
+         width: 90%; 
+     }
+     .N-icons {
+         grid-template-columns: repeat(3, 1fr); 
+     }
+ }
+ 
+ 
+ @media (max-width: 600px){
+    .N-button{
+        display: none;
+    }
+    .N-list{
+        display: none;
+    }
+    .N-icons{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ @media (max-width: 480px) {
+    .N-list{
+        display: none;
+    } 
+    .N-title {
+         font-size: 1.5rem; 
+         margin-left: 5%;
+     }
+     #text {
+         font-size: 0.8rem;
+         margin-left: 5%;
+     }
+     .N-button {
+         display: none;
+     }
+     #N-search {
+         width: 80%; 
+     }
+     .N-icons {
+         grid-template-columns: 1fr 1fr; 
+     }
+ }
+ @keyframes moveGradient {
+     0% {
+         background-position: 0% 50%;  
+     }
+     50% {
+         background-position: 100% 50%; 
+     }
+     100% {
+         background-position: 0% 50%;  
+     }
+ 
+ }
