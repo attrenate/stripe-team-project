@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.footer-1{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+}
+#N-h1{
+    color: seagreen;
+    font-family: 'Inter', sans-serif;
+}
+address{
+    font-family: 'Inter', sans-serif;
+}
