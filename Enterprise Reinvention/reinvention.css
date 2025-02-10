@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%; /* Changed: Use 100% width for responsive design instead of fixed 1920px */
+  height: 100%; /* Changed: Set height to 100% to allow content to scale */
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.a-center-info-container2{
+    width: 1080px;
+    height: 907px;
+    gap: 64px;
+    margin:100px 470px;
+
+}
+
+.a-reinvention-1section-container{
+    margin-left: 30px;
+}
+
+.a-h3-reinvention{
+    width: 762px;
+    height: 28px;
+    font-size: 16.45px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: rgba(99, 91, 255, 1);
+    margin-bottom: 20px;
+
+}
+
+.a-h1-reinvention{
+    width: 762px;
+    height: 48px;
+    font-weight: 500px;
+    font-size: 34.73px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+    color: rgba(10, 37, 64, 1);
+
+}
+
+.a-reinvention{
+    width: 810px;
+    height: 100px;
+    max-width: 810px;
+    gap: 24px;
+    padding-right: 32px;
+    padding-left: 16px;
+    
+
+}
+
+.a-reinvention-main-paragraph{
+    width: 810px;
+    height: 112px;
+    max-width: 810px;
+    top: 124px;
+    padding-right: 32px;
+    padding-left: 16px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.a-reinvention-p{
+    width: 720px;
+    height: 84px;
+    top: -0.5px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16.45px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color:rgba(66, 84, 102, 1);
+}
+
+a{
+    text-decoration: none;
+    color:rgba(99, 91, 255, 1);
+
+}
+
+button{
+    width: 139px;
+    height: 33px;
+    border-radius: 16.5px;
+    background-color:rgba(99, 91, 255, 1);
+    text-decoration: none;
+    border-color: rgba(99, 91, 255, 1);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500px;
+    font-size: 13.95px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-family: 'Inter', sans-serif;
+;
+}
+
+.a-reinvention-button{
+    padding-right: 32px;
+    padding-left: 16px;
+}
+
+
+.a-reinvention-2section{
+    width: 1080px;
+    height: 550px;
+    gap: 40px;
+    margin-top: 70px;
+    padding-right: 32px;
+    padding-left: 16px;
+}
+
+.a-reinvention-2s-1s-aside{
+    margin-bottom: auto;
+}
+
+.a-reinvention-aside-1s{
+    width: 238px;
+    height: 248px;
+    gap: 48px;
+}
+
+.a-aside-1s{
+
+margin-bottom: 60px;
+
+}
+
+
+
+.a-aside-1s-5-header{
+    width: 110px;
+    height: 32px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31.92px;
+    letter-spacing: 0.2px;
+    color:  rgba(10, 37, 64, 1);
+    padding-right: 20px;
+    padding-left: 16px;
+    margin-top: -27.5px;
+}
+
+.a-aside-1s-5-main{
+    width: 238px;
+    height: 32px;
+    max-width: 810px;
+    padding-right: 112px;
+    padding-left: 16px;
+
+}
+
+.a-aside-1s-5-paragraph{
+    width: 238;
+    height: 72;
+    max-width: 810px;
+    padding-right: 20px;
+    padding-left: 16px;
+    
+}
+
+.a-aside-1s-5{
+    width: 230px;
+    height: 72px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.83px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color:rgba(66, 84, 102, 1);
+    padding-right: 20px;
+    padding-left: 16px;
+}
+
+.a-aside-1s-5header-vertical{
+    width: 1px;
+    height: 24px;
+    background:rgba(99, 91, 255, 1);
+ 
+}
+
+ul {
+    list-style: none; /* Removes bullets */    
+}
+
+
+.a-aside-3s-products-used1{
+    width: 238px;
+    height: 32px;
+    max-width: 810px;
+    padding-right: 112px;
+    padding-left: 16px;
+}
+
+.a-aside-3s-products-used-vertical{
+    width: 1px;
+    height: 15px;
+    background:rgba(99, 91, 255, 1);
+  }
+
+  .a-aside-3s-products-used-header{
+    width: 150px;
+    height: 24px;
+    font-family: Inter;
+    font-weight: 500px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color:  rgba(10, 37, 64, 1);
+    padding-right: 20px;
+    padding-left: 16px;
+    margin-top: -21px;
+}
+
+.a-aside-products-used{
+    margin-top: 30px;
+}
+
+.a-aside-3s-products-used-list{
+    width: 238px;
+    height: 32px;
+    max-width: 810px;
+    padding-left: 32px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18.15px;
+    letter-spacing: 0.2px;
+    color:  rgba(66, 84, 102, 1);
+}
+
+.a-payments{
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.a-payments::before {
+    content: "";
+    background-image: url('payments.jpg'); /* Replace with the correct image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px; /* Adjust width */
+    height: 24px; /* Adjust height */
+    display: inline-block;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.a-connect::before {
+    content: "";
+    background-image: url('connection.jpg'); /* Replace with the correct image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 24px; /* Adjust width */
+    height: 24px; /* Adjust height */
+    display: inline-block;
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.a-reinvention-2s-1s {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Adjust spacing */
+}
+
+.a-card{
+    border-radius: 15px; /* Rounded corners */
+    display: block;
+    overflow: hidden;
+    width: 730px;
+    height: 390px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a soft shadow */
+
+}
+
+.a-reinvention-img{
+    display: grid;
+    & > * {
+        grid-column:1;
+        grid-row:1;
+    }
+}
+
+.a-reinvention-img-iconflex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.a-groupjpg{
+    width: 93px;
+    height: 28px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.a-framejpg{
+    width: 20px;
+    height: 18px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.a-reinvention-img-p{
+    width: 390px;
+    height: 72px;
+    font-family: Inter;
+font-weight: 500;
+font-size: 22px;
+line-height: 36px;
+letter-spacing: 0%;
+color:  rgba(255, 255, 255, 1);
+margin-left: 20px;
+margin-top: 300px;
+
+}
+
+.a-reinvention-logo-section-verticals {
+    display: flex; /* Aligns divs in a row */
+    width: 100%; /* Ensures it spans full width */
+    height: 1px; /* Thin line */
+    background: transparent; /* No background */
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.a-reinvention-logo-vertical-divider1 {
+    background-color: rgba(0, 102, 177, 1);
+    width: 25%;
+    height: 100%;
+}
+
+.a-reinvention-logo-vertical-divider2 {
+    background-color: rgba(239, 168, 46, 1);
+    width: 25%;
+    height: 100%;
+}
+
+.a-reinvention-logo-vertical-divider3 {
+    background-color: rgba(66, 176, 213, 1);
+    width: 25%;
+    height: 100%;
+}
+
+.a-reinvention-logo-vertical-divider4 {
+    background-color:rgba(197, 70, 71, 1);
+    width: 25%;
+    height: 100%;
+}
+
+.a-reinvention-logo-img{
+    display: flex; /* Aligns divs in a row */
+    width: 100%; /* Ensures it spans full width */
+    height: 100%; /* Thin line */
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+
+

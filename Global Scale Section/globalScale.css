@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%; /* Changed: Use 100% width for responsive design instead of fixed 1920px */
+  height: 100%; /* Changed: Set height to 100% to allow content to scale */
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+.aGlobalScale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Changed: Set width to 100% */
+  height: 100vh;
+  background-color: #0A2540; /* Background color */
+  clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
+  z-index: 1; /* Ensure it stays behind other content */
+  background-image: url(image.png); /* Add your image URL here */
+  background-size: cover; /* Make the background image cover the element */
+  background-repeat: no-repeat; /* Prevent repeating of the image */
+
+
+}
+
+.aGlobal-Scale-Main-Info {
+  width: 1080px; /* Fixed width for larger screens */
+  height: 911px; /* Fixed height */
+  position: relative;
+  z-index: 2;
+  
+}
+
+.a-global-scale-main-heading {
+  margin-top: 20px;
+  width: 674px;
+  height: 96px;
+  margin-bottom: 20px;
+  margin-right: 400px;
+  color: white;
+  font-size: 22px;
+}
+
+.a-main-info-two-sections {
+  width: 1080px; /* Fixed width */
+  height: 496px;
+  gap: 96px;
+}
+
+.a-main-info-first-section {
+  width: 1080px; /* Fixed width */
+  height: 312px;
+}
+
+.a-heading-one {
+  width: 810px; /* Fixed width */
+  height: 148px;
+  padding: 0px 120px 0px 16px;
+  gap: 24px;
+  margin-left: 150px;
+  margin-top: 200px;
+}
+
+.a-main-pharagraph {
+  width: 200px; /* Fixed width */
+  height: auto;
+  padding: 0px 112px 0px 16px;
+  color: #ADBDCC;
+  margin-right: 350px;
+  margin-left: 150px;
+  margin-bottom:50px;
+  line-height: 1.5;
+  word-wrap: break-word; /* Ensure text wraps correctly */
+  white-space: normal;
+
+}
+
+.a-main-info-second-section {
+  width: 1080px; /* Fixed width */
+  height: 88px;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  margin-left: 150px;
+  
+}
+
+.a-2s-section {
+  width: 270px; /* Fixed width */
+  height: 88px;
+  gap: 8px;
+  margin-left: 50px;
+}
+
+.a-2s-section-header {
+  width: 270px; /* Fixed width */
+  height: 32px;
+  
+  
+}
+
+.a-2s-1s-paragraph {
+  width: 270px; /* Fixed width */
+  height: 48px;
+  
+}
+
+.a-2s-section-vertical {
+  width: 1px;
+  height: 24px;
+  background: #00d4ff;
+}
+
+.a-2s-section-header-paragraph {
+  width: 222px; /* Fixed width */
+  height: 32px;
+  margin-top: -27.5px;
+  margin-left: 17px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #00d4ff;
+}
+
+.a-2s-section-p {
+  width: 84px;
+  height: 32px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  text-underline-position: from-font;
+}
+
+.a-2s-section-main-paragraph {
+  width: 270px; /* Fixed width */
+  height: 48px;
+  padding: 0px 32px 0px 16px;
+  margin-left: 19px;
+  color: #ADBDCC;
+  margin-top: 7px;
+}
+
+.a-2s-main-p {
+  width: 222px; /* Fixed width */
+  height: 48px;
+  font-family: Inter;
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+.a-global-scale {
+  color: #00D4FF;
+  
+}
+
+/* Responsive adjustments */
+
+/* For screens 1024px and above */
+@media (min-width: 1024px) {
+  body {
+    width: 100%; /* Changed: Use 100% width for responsive design */
+    height: 100%; /* Changed: Set height to 100% for better scaling */
+  }
+
+  .aGlobal-Scale-Main-Info {
+    width: 90%; /* Changed: Scale the width to 90% of the screen */
+    margin-left: auto; /* Changed: Auto margin for centering */
+    margin-right: auto; /* Changed: Auto margin for centering */
+    margin-top: 5%; /* Changed: Adjusted margin-top for better positioning */
+  }
+
+  .a-global-scale-main-heading {
+    font-size: 24px; /* Changed: Increased font size slightly for larger screens */
+    width: 30%; /* Changed: Make the heading width 100% for better responsiveness */
+  }
+
+  .a-main-info-two-sections {
+    width: 90%; /* Changed: Set the width to 90% for responsiveness */
+    height: auto; /* Changed: Auto height to allow content to grow */
+    gap: 40px; /* Changed: Reduced gap for better spacing on large screens */
+  }
+
+  .a-main-info-first-section {
+    width: 100%; /* Changed: Make this section width 100% */
+  }
+
+  .a-heading-one{
+    width: 100%; /* Changed: Set width to 100% for better flexibility */
+    padding: 0px 16px; /* Changed: Reduced padding for responsiveness */
+  }
+
+  .a-main-pharagraph {
+    width: 30%; /* Changed: Set width to 100% for better flexibility */
+    padding: 0px 16px; /* Changed: Reduced padding for responsiveness */
+  }
+
+  .a-main-info-second-section {
+    margin-top: 30px; /* Changed: Reduced margin-top for better alignment */
+  }
+
+  .a-2s-section {
+    width: 250px; /* Changed: Adjust width for better layout on larger screens */
+  }
+
+  .a-2s-section-header {
+    width: 100%; /* Changed: Set width to 100% for responsiveness */
+    padding: 0px 16px; /* Changed: Reduced padding */
+  }
+
+  .a-2s-1s-paragraph,
+  .a-2s-section-main-paragraph {
+    width: 100%; /* Changed: Set width to 100% */
+  }
+
+  .a-2s-main-p {
+    font-size: 14px; /* Changed: Increased font size slightly */
+    line-height: 26px; /* Changed: Increased line-height for readability */
+  }
+}
+
+/* For larger screens 1920px and above */
+@media (min-width: 1920px) {
+  .aGlobal-Scale-Main-Info {
+    width: 80%; /* Changed: Adjust for very large screens */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .a-2s-section {
+    width: 270px; /* Restored fixed width for very large screens */
+  }
+}
