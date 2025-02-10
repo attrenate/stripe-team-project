@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.N-launch{
+    font-family: 'Inter', sans-serif;
+    color: #5167FC;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+.N-low-header{
+    font-family: 'Inter', sans-serif;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-weight: bold;
+
+}
+.N-launch-text{
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.N-first-box{
+    width: 270px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-left: 17rem;
+    margin-top: 4rem;
+    z-index: 1;
+    position: absolute;
+}
+.N-box-square{
+    width: 270px;
+    height: 200px;
+    background-color: wheat;
+    border-radius: 10px;
+    
+    z-index: 2;
+    position: absolute;
+}
+.N-box-text1{
+    font-family: 'Inter', sans-serif;
+    z-index: 3;
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 3px;
+    font-size: x-large;
+}
+.N-box-text1-text{
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    z-index: 2;
+    margin-top: 18rem;
+   
+}
+.N-circle1{
+    width: 90px;
+    height: 90px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+#squarespace{
+    margin-left: 1rem;
+    margin-top: 2.5rem;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: x-small;
+}
+.N-circle2{
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    margin-top: 6rem;
+    margin-left: 14rem;
+
+}
+.N-circle3{
+    width: 90px;
+    height: 90px;
+    background-color: #5167FC;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 6.5rem;
+    margin-left: 1rem;
+}
+#intuit{
+    color: white;
+    margin-top: 2.3rem;
+    margin-left: 1.5rem;
+}
+.N-second-box{
+    width: 270px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-left: 36rem;
+    margin-top: 4rem;
+    z-index: 1;
+    position: absolute;
+}
+.N-second-square{
+    width: 270px;
+    height: 200px;
+    background-color: wheat;
+    border-radius: 10px;
+    
+    z-index: 2;
+    position: absolute;
+   
+}
+.N-box-text2{
+    font-family: 'Inter', sans-serif;
+    z-index: 3;
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 3px;
+    font-size: x-large;
+}
+.N-box-text2-text{
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    z-index: 2;
+    margin-top: 18rem;
+}
+.N-third-box{
+    width: 270px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin-left: 55rem;
+    margin-top: 4rem;
+    z-index: 1;
+    position: absolute;
+}
+.N-third-square{
+    width: 270px;
+    height: 200px;
+    background-color: wheat;
+    border-radius: 10px;
+    
+    z-index: 2;
+    position: absolute;
+}
+.N-box-text3{
+    font-family: 'Inter', sans-serif;
+    z-index: 3;
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: 3px;
+    font-size: x-large;
+}
+.N-box-text3-text{
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    z-index: 2;
+    margin-top: 18rem;
+   
+}
