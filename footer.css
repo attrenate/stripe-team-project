@@ -2,18 +2,66 @@
     margin: 0;
     padding: 0;
 }
+
 li{
     list-style: none;
 }
+
 .footer-1{
     display: flex;
     justify-content: space-between;
     font-family: 'Inter', sans-serif;
 }
+
 #N-h1{
     color: seagreen;
     font-family: 'Inter', sans-serif;
 }
+
 address{
     font-family: 'Inter', sans-serif;
+}
+
+/* For screens smaller than 769px (Tablets) */
+@media (max-width: 768px) {
+    .footer-1 {
+        display: grid; /* Change to grid for better control of columns */
+        grid-template-columns: 1fr 1fr; /* Two columns layout */
+        gap: 20px;
+    }
+
+    /* Ensure h1 remains at the top and not squeezed in tablet view */
+    #N-h1 {
+        grid-column: span 2; /* Span across both columns */
+        text-align: center; /* Center the title */
+    }
+
+    /* Adjusting the ul items within each section */
+    ul {
+        margin-bottom: 20px; /* Add spacing between each list */
+    }
+}
+
+/* For screens smaller than 600px (Mobile) */
+@media (max-width: 600px) {
+    .footer-1 {
+        display: block; /* Change to block for a single column */
+    }
+
+    /* Ensure h1 title takes up full width */
+    #N-h1 {
+        text-align: center; /* Center the title */
+        margin-bottom: 20px; /* Space below the title */
+    }
+
+    /* Stack all ul items vertically */
+    ul {
+        margin-bottom: 15px; /* Add spacing between each list */
+    }
+
+    /* Ensure address stays at the bottom */
+    address {
+        margin-top: 30px;
+        text-align: center;
+    }
 }
