@@ -1,0 +1,965 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f9fc;
+    overflow-x: hidden;
+    font-family: "Inter", serif;
+}
+
+
+/* Section 1 styles - Modular Solutions */
+.tmodular-solutions {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 200px;
+    margin-right: 200px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.ts-leftside span {
+    color: #635BFF;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.ts-leftside h1 {
+    margin-top: 50px;
+    font-weight: 1000;
+    color: #0A2540;
+    font-size: 51px;
+}
+
+.ts-leftside p {
+    margin-top: 50px;
+    font-size: 17px;
+    font-weight: 200;
+}
+.ts-rightside{
+    margin-top: 150px;
+}
+/* Section 2 - Payments */
+.tpayments {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 400px;
+}
+
+.tleftpayment {
+    max-width: 500px;
+}
+
+.tpayments h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #0A2540;
+    margin-top: 40px;
+}
+
+.tpayments p {
+    font-weight: 1000;
+    font-size: 18px;
+    color: #425466;
+    margin-top: 30px;
+}
+
+.tpayment-button {
+    background-color: #635BFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.tpaymentfooter {
+    margin-top: 20px;
+}
+
+.tblue-word {
+    font-weight: 700;
+    color: #635BFF;
+    cursor: pointer;
+}
+
+/* Right Side Payment Box */
+.trightpayment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tpay-product-img{
+    margin-left:42% ;
+    width: 40px;
+    height: 60px;
+}
+.tpay-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 350px;
+}
+
+.tpay-product-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tpay-product-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0A2540;
+    display: block;
+}
+
+.tpay-product-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0A2540;
+    display: block;
+    margin-top: 5px;
+}
+
+.tpay-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tpay-method {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.tpay-applepay {
+    background-color: #000;
+    color: #fff;
+}
+
+.tpay-linkpay {
+    background-color: #00b894;
+    color: #fff;
+}
+
+.tpay-divider {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin: 20px 0;
+}
+
+.tpay-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0A2540;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tpay-input, .tpay-dropdown {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.tpay-card-details {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tpay-input-small {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.tpay-final-button {
+    background-color: #0A2540;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Section 3 - Recurring Revenue */
+.trecurring-revenue {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 400px;
+}
+
+.trecurring-leftside {
+    max-width: 500px;
+    flex: 1;
+    margin: 20px;
+}
+
+.trecurring-leftside h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #0A2540;
+    margin-bottom: 50px;
+}
+
+.trecurring-leftside p {
+    font-weight: 522;
+    font-size: 16px;
+    color: #425466;
+    margin-bottom: 20px;
+}
+
+.trecurring-button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color:#635BFF ;
+    font-weight: 500;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.trecurring-footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #425466;
+    letter-spacing: 1px;
+}
+
+.choosen{
+    background-color:#F6F9FC;
+}
+.tbold-word {
+    font-weight: 700;
+    color: #0A2540;
+}
+
+.tblue-word {
+    font-weight: 700;
+    color: #635BFF;
+    cursor: pointer;
+}
+
+/* Pricing Table */
+
+.tcontainer {
+    width: 538px;
+    height: 390px;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+ }
+ 
+ .tplan {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    position: relative;
+ }
+ 
+ .ttitle {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-weight: 800;
+    color: #2c3e50;
+ }
+ 
+ .tusers {
+    font-size: 10px;
+    color: #3F4B66;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+ }
+ 
+ .tprice {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3F4B66;
+    margin: 0 0 15px 0;
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+ }
+ 
+ .tprice span {
+    font-size: 14px;
+    color: #3F4B66;
+ }
+ 
+ .tbutton {
+    width: 100%;
+    padding: 8px;
+    background: #9966FF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+ }
+ 
+ .tbutton:hover {
+    background: #8855EE;
+ }
+ 
+ .tfeatures {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+ }
+ 
+ .tfeaturesheading {
+    font-weight: 600;
+    font-size: 10px;
+    color: #3F4B66;
+    display: block;
+    margin-bottom: 10px;
+ }
+ 
+ .tfeatures li {
+    margin-bottom: 6px;
+    padding-left: 15px;
+    position: relative;
+    color: #3F4B66;
+ }
+ 
+ .tfeatures li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+ }
+ 
+ .tpopular {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    background: #F3F0FF;
+    color: #9966FF;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 10px;
+    font-weight: 600;
+ }
+
+
+ /* section 4 connect */
+.tconnect{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    margin-top: 400px;
+}
+ 
+
+/* connect right side */
+
+.t-container {
+    width: 331px;
+    height: 450px;
+    border-radius: 9.53px;
+    margin-right:100px;
+    border: 1.19px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tleft-connect h1{
+    margin-bottom: 50px;
+}
+.tleft-connect p{
+    margin-bottom: 50px;
+}
+.tpayment-button{
+    margin-bottom: 30px;
+}
+
+/* Header Section */
+.t-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.t-transaction{
+    margin-top: 30px;
+}
+.t-transaction {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.t-processing-label {
+    display: inline-block;
+    background: #e0f7e9;
+    color: #0f9d58;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
+.t-total-amount {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* Flow Section */
+.t-flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.t-flow-item {
+    background: #f2f8ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    width: fit-content;
+    border: 1px solid #007bff;
+}
+
+.t-platform {
+    background: #e0f7fa;
+    color: #00796b;
+    border: 1px solid #00796b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+.t-fee {
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.t-flow-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+.t-flow-arrow {
+    width: 10px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2v20m0 0l-5-5m5 5l5-5" stroke="%23007bff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px 0;
+}
+
+
+.t-sellers {
+    background: #f2f8ff;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+/* section 5 issuing */
+.tissuing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 400px;
+}
+
+
+.tleft-issuing h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #0A2540;
+    margin-top: 40px;
+}
+
+.tleft-issuing p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #425466;
+    margin-top: 60px;
+}
+
+.tissuing-button {
+    background-color: #635BFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.tissuingfooter {
+    margin-top: 50px;
+}
+
+.tblue-word {
+    font-weight: 700;
+    color: #635BFF;
+    cursor: pointer;
+}
+.tright-issuing{
+    margin-top: 150px;
+    margin-left: 150px;
+}
+/* section 10  */
+
+.tBlueBackground{
+    overflow: hidden;
+    width: 100%;
+    height: 1200px;
+    background-color: #112D4E;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+   
+
+}
+
+.tTopdev{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.tLeftDev{
+    width: 540;
+    height: 417;
+}
+.tdevTopHeader{
+    font-weight: 500;
+    font-size: 17px;
+    color: #00D4FF;
+}
+.tLeftDev h1{
+    font-weight: 500;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 60px;
+}
+.tLeftDev p{
+    margin-bottom: 70px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ADBDCC;
+}
+.tDevButton{
+    margin-top: 30px;
+    background-color: #00D4FF;
+    font-weight: 700;
+    width: 140px;
+    height: 35px;
+    border-radius: 16px;
+    color: #0A2540;
+    padding: 7px;
+}
+.tGray{
+    background: linear-gradient(to bottom right, #112D4E, #0C223A);
+    box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500; 
+    font-size: 15px;
+    padding: 40px;
+    font-family: "Source Code Pro", serif !important;
+}
+.tgray span{
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Source Code Pro", serif !important;
+}
+.tyellow-word{
+    color: #FFA956;
+    font-weight: 600;
+}
+.tgray-word{
+    color: gray;
+}
+.tBlue{
+    background: linear-gradient(to bottom right,     #020A18, #0C223A);
+    box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
+    border-radius: 0px 0px 10px 10px;
+    color: #fff;
+    font-weight: 500; 
+    font-size: 15px;
+    padding: 40px;
+    font-family: "Source Code Pro", serif !important;
+}
+
+
+.tdevbottom{
+    
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 250px;
+}
+.tbottom-setting{
+    width: 270px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.tbottom-setting img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.tbottom-setting h1{
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+.tbottom-setting p{
+    font-weight: 500;
+    font-size: 14px;
+    color: #ADBDCC;
+    margin-top: 30px;
+}
+.tbottom-setting a{
+    text-decoration: none;
+    color: #00D4FF;
+    font-size: 14;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .tmodular-solutions {
+        flex-direction: column;
+    }
+    .tpayments {
+        flex-direction: column;
+    }
+    .trecurring-revenue {
+        flex-direction: column;
+    }
+    .tconnect {
+        flex-direction: column;
+    }
+    .tissuing {
+        flex-direction: column;
+    }
+    .tBlueBackground {
+        overflow: hidden;
+        width: 100%;
+        height: 1400px;
+        background-color: #112D4E;
+    }
+    /* Section 10 adjustments */
+    .tTopdev {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 120px;
+    }
+    .tdevTopHeader {
+        font-weight: 500;
+        font-size: 15px;
+        color: #00D4FF;
+    }
+    .tLeftDev h1 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 60px;
+    }
+    .tLeftDev p {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 10px;
+        color: #ADBDCC;
+    }
+    .tDevButton {
+        width: 140px;
+        height: 35px;
+        border-radius: 16px;
+        color: #0A2540;
+    }
+    .tGray {
+        width: 50%;
+        font-size: 10px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tgray span {
+        text-align: left;
+        font-weight: 500;
+        font-size: 10px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tBlue {
+        width: 50%;
+        background: linear-gradient(to bottom right, #020A18, #0C223A);
+        box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
+        border-radius: 0px 0px 10px 10px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10px;
+        padding: 40px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tdevbottom {
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    .tbottom-setting {
+        margin-top: 20px;
+        width: 270px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    .tbottom-setting img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    .tbottom-setting h1 {
+        font-weight: 600;
+        font-size: 10px;
+        color: #fff;
+    }
+    .tbottom-setting p {
+        font-weight: 500;
+        font-size: 10px;
+        color: #ADBDCC;
+        margin-top: 30px;
+    }
+    .tbottom-setting a {
+        text-decoration: none;
+        color: #00D4FF;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+}
+
+/* 390px - Further reduce sizes and enforce column layout */
+@media (max-width: 390px) {
+    body{
+        overflow-x: hidden;
+    }
+    .tmodular-solutions {
+        flex-direction: column;
+    }
+    .tpayments {
+        flex-direction: column;
+    }
+    .trecurring-revenue {
+        flex-direction: column;
+    }
+    .tconnect {
+        flex-direction: column;
+    }
+    .tissuing {
+        flex-direction: column;
+    }
+    /* Section 10 adjustments for 390px */
+    .tBlueBackground {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0;
+        padding: 0;
+        width: 600px;
+        height: 2400px;
+    }
+    .tTopdev {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tLeftDev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tdevTopHeader {
+        font-weight: 500;
+        font-size: 15px;
+        color: #00D4FF;
+    }
+    .tLeftDev h1 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 60px;
+    }
+    .tLeftDev p {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 10px;
+        color: #ADBDCC;
+    }
+    .tDevButton {
+        width: 140px;
+        height: 35px;
+        border-radius: 16px;
+        color: #0A2540;
+    }
+    .tGray {
+        margin-top: 30px;
+        width: 100%;
+        font-size: 10px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tgray span {
+        text-align: left;
+        font-weight: 500;
+        font-size: 10px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tBlue {
+        width: 100%;
+        background: linear-gradient(to bottom right, #020A18, #0C223A);
+        box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
+        border-radius: 0px 0px 10px 10px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10px;
+        padding: 40px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tdevbottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .tbottom-setting {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tbottom-setting img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .tbottom-setting h1 {
+        font-weight: 600;
+        font-size: 10px;
+        color: #fff;
+    }
+    .tbottom-setting p {
+        font-weight: 500;
+        font-size: 10px;
+        color: #ADBDCC;
+        margin-top: 30px;
+    }
+    .tbottom-setting a {
+        text-decoration: none;
+        color: #00D4FF;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+ 
+    .tconnect{
+        margin-left: 100px;
+    }
+    .trecurring-revenue{
+        margin-right: 100px;
+    }
+    .tpayments{
+        margin-right: 100px;
+    }
+    .tmodular-solutions{
+        margin-right: 100px;
+    }
+}
