@@ -1,9 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
-
 }
-.N-launch{
+
+#N-section{
+    transition: background-color 0.3s ease-in-out;
+}
+.N-launch {
     font-family: 'Inter', sans-serif;
     color: #5167FC;
     font-weight: bold;
@@ -11,159 +14,210 @@
     margin-top: 2rem;
     margin-left: 1rem;
 }
-.N-low-header{
+
+.N-low-header {
     font-family: 'Inter', sans-serif;
     margin-top: 2rem;
     margin-left: 1rem;
     font-weight: bold;
-
 }
-.N-launch-text{
+
+.N-launch-text {
     font-family: 'Inter', sans-serif;
     margin-top: 1rem;
     margin-left: 1rem;
 }
-.N-first-box{
-    width: 270px;
-    height: 400px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    margin-left: 17rem;
-    margin-top: 4rem;
-    z-index: 1;
-    position: absolute;
-}
-.N-box-square{
-    width: 270px;
-    height: 200px;
-    background-color: wheat;
-    border-radius: 10px;
-    
-    z-index: 2;
-    position: absolute;
-}
-.N-box-text1{
-    font-family: 'Inter', sans-serif;
-    z-index: 3;
-    position: absolute;
-    margin-top: 14rem;
-    margin-left: 3px;
-    font-size: x-large;
-}
-.N-box-text1-text{
-    font-family: 'Inter', sans-serif;
-    position: absolute;
-    z-index: 2;
-    margin-top: 18rem;
-   
-}
-.N-circle1{
-    width: 90px;
-    height: 90px;
-    background-color: black;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 3;
-    margin-top: 2rem;
-    margin-left: 5rem;
-}
-#squarespace{
-    margin-left: 1rem;
-    margin-top: 2.5rem;
-    color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: x-small;
-}
-.N-circle2{
-    width: 90px;
-    height: 90px;
-    background-color: white;
-    border-radius: 50%;
-    position: absolute;
-    z-index: 3;
-    margin-top: 6rem;
-    margin-left: 14rem;
 
+.N-boxes {
+    position: relative;
+    margin-top: 4rem;
+    width: 100%;
 }
-.N-circle3{
+
+.N-first-box, .N-second-box, .N-third-box {
+    width: 270px;
+    height: 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    position: absolute;
+    transition: transform 0.3s ease-out;
+}
+/* Slide-in animation when hovered */
+.N-first-box:hover,
+.N-second-box:hover,
+.N-third-box:hover {
+    transform: translateY(-10px); /* Move the box upwards */
+}
+.N-first-box {
+    margin-left: 17rem;
+    
+}
+
+.N-second-box {
+    margin-left: 36rem;
+    
+}
+
+.N-third-box {
+    margin-left: 55rem;
+   
+}
+
+
+
+.N-box-square {
+    width: 270px;
+    height: 200px;
+    background-color: wheat;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+}
+
+.N-box-text1, .N-box-text2, .N-box-text3 {
+    font-family: 'Inter', sans-serif;
+    font-size: x-large;
+    position: absolute;
+    top: 14rem;
+    left: 3px;
+}
+
+.N-box-text1-text, .N-box-text2-text, .N-box-text3-text {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 18rem;
+    left: 3px;
+}
+
+.N-circle1, .N-circle2, .N-circle3 {
     width: 90px;
     height: 90px;
-    background-color: #5167FC;
     border-radius: 50%;
     position: absolute;
-    margin-top: 6.5rem;
-    margin-left: 1rem;
 }
-#intuit{
+
+.N-circle1 {
+    background-color: black;
+    top: 2rem;
+    left: 5rem;
+}
+
+.N-circle2 {
+    background-color: white;
+    top: 6rem;
+    left: 14rem;
+}
+
+.N-circle3 {
+    background-color: #5167FC;
+    top: 6.5rem;
+    left: 1rem;
+}
+
+#squarespace, #intuit {
     color: white;
+    font-size: x-small;
     margin-top: 2.3rem;
-    margin-left: 1.5rem;
 }
-.N-second-box{
-    width: 270px;
-    height: 400px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    margin-left: 36rem;
-    margin-top: 4rem;
-    z-index: 1;
-    position: absolute;
-}
-.N-second-square{
+
+.N-second-square, .N-third-square {
     width: 270px;
     height: 200px;
     background-color: wheat;
     border-radius: 10px;
-    
-    z-index: 2;
     position: absolute;
+}
+
+@media(max-width: 600px) {
+    /* Adjustments for mobile view */
+    .N-boxes {
+        position: relative;
+        margin-top: 2rem;
+    }
+
+    .N-first-box, .N-second-box, .N-third-box {
+        position: relative;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+    }
+
    
-}
-.N-box-text2{
-    font-family: 'Inter', sans-serif;
-    z-index: 3;
-    position: absolute;
-    margin-top: 14rem;
-    margin-left: 3px;
-    font-size: x-large;
-}
-.N-box-text2-text{
-    font-family: 'Inter', sans-serif;
-    position: absolute;
-    z-index: 2;
-    margin-top: 18rem;
-}
-.N-third-box{
-    width: 270px;
-    height: 400px;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    margin-left: 55rem;
-    margin-top: 4rem;
-    z-index: 1;
-    position: absolute;
-}
-.N-third-square{
-    width: 270px;
-    height: 200px;
-    background-color: wheat;
-    border-radius: 10px;
+
+    .N-box-text1, .N-box-text2, .N-box-text3 {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: 1rem;
+        z-index: 4;
+    }
+    .N-box-text1{
+        transform: translateY(410%);
+    }
+    .N-second-square{
+        transform: translateY(-30%);
+    }
+    .N-box-text2, .N-box-text3{
+        transform: translateY(400%);
+    }
     
-    z-index: 2;
-    position: absolute;
+    .N-box-square, .N-second-square, .N-third-square{
+        width: 100%;
+    }
+    #squarespace {
+        transform: translateX(20%);
+    }
+    #intuit{
+        transform: translateX(35%);
+    }
 }
-.N-box-text3{
-    font-family: 'Inter', sans-serif;
-    z-index: 3;
-    position: absolute;
-    margin-top: 14rem;
-    margin-left: 3px;
-    font-size: x-large;
+/* 769px to 1024px range for tablet / smaller laptop screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .N-boxes {
+        display: flex;
+        justify-content: space-between; /* Adjust spacing between boxes */
+    }
+
+    .N-first-box, .N-second-box, .N-third-box {
+        width: 250px; /* Adjust width to fit the screen */
+        height: 380px; /* Adjust height accordingly */
+        margin-top: 4rem;
+    }
+
+    .N-box-text1, .N-box-text2, .N-box-text3 {
+        font-size: 1.2rem; /* Slightly smaller font size for tablets */
+    }
+
+    .N-box-text1-text, .N-box-text2-text, .N-box-text3-text {
+        font-size: 1rem; /* Smaller font size for text */
+    }
+
+    .N-circle1, .N-circle2, .N-circle3 {
+        width: 80px; /* Adjust circles to fit better */
+        height: 80px;
+    }
+
+    /* Adjusting the circle positions */
+    .N-circle1 {
+        top: 2rem;
+        left: 4rem;
+    }
+
+    .N-circle2 {
+        top: 6rem;
+        left: 12rem;
+    }
+
+    .N-circle3 {
+        top: 6.5rem;
+        left: 1rem;
+    }
+
+    #squarespace, #intuit {
+        font-size: small; /* Adjust font size of text in circles */
+        margin-top: 2.5rem;
+    }
 }
-.N-box-text3-text{
-    font-family: 'Inter', sans-serif;
-    position: absolute;
-    z-index: 2;
-    margin-top: 18rem;
-   
-}
+
+
