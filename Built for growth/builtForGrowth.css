@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Reset margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%; 
+  height: 100vh; 
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  background-color: rgba(246, 249, 252, 1);
+  position: relative;
+
+  
+}
+
+img{
+  width: 510px;
+  height: 555px;
+
+}
+
+.a-bfg-section2{
+  width: 1080px;
+  height: 1270px;
+  padding-top: 30px;
+  margin-left: 150px;
+
+}
+
+.a-bfg-section2-section1{
+  width: 508px;
+  flex-direction: column; 
+  justify-content: flex-end; 
+  height: 100%; 
+  display: flex;
+  margin-top: 300px;
+  
+
+}
+
+.a-bfg-section2-section2 {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-start; 
+  height: 100%; 
+}
+
+.a-bfg-s2-s2-first-container,
+.a-bfg-s2-s2-second-container {
+  width: 100%; 
+}
+
+.a-bfg-section2 {
+  display: flex; /* Arrange child elements horizontally */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  height: 100vh; /* Ensure the section takes full height of the viewport */
+  gap: 20px; /* Add space between the two sections */
+}
+
+.a-bfg-section2-section1,
+.a-bfg-section2-section2 {
+  display: flex; 
+  flex: 1; 
+  flex-direction: column; 
+  justify-content: flex-start;
+  width: 45%; 
+  
+}
+
+
+.a-main-p-bfg{
+  width: 720px;
+  height: 84px;
+  top: -0.5px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 16.45px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color:rgba(66, 84, 102, 1);
+}
+
+.a-bfg-main-heading{
+  width: 762px;
+  height: 48px;
+  font-weight: 500px;
+  font-size: 34.73px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: rgba(10, 37, 64, 1);
+  margin-bottom: 20px;
+
+}
+
+.a-bfg{
+  width: 762px;
+  height: 28px;
+  font-size: 16.45px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: rgba(99, 91, 255, 1);
+  margin-bottom: 20px;
+
+}
+
+.a-builtforgrowth-1s{
+  margin-left: 180px;
+  padding-top: 40px;
+}
+
+.a-builtforgrowth-background{
+  width: 100%;
+  height: 400px;
+  background-color: rgba(10, 37, 64, 1);
+  clip-path: polygon(0 80%, 100% 61%, 100% 100%, 0 100%);
+  position: relative; /* Position it at the bottom */
+  z-index: -1; /* Ensure it stays in the background */
+  margin-top: 500px;
+}
+
+.a-builtforgrowth {
+  position: relative;
+  z-index: 1; 
+}
+
+
