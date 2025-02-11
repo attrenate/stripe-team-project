@@ -151,8 +151,7 @@
     position: absolute; 
     right: 15px; 
     top: 50%; 
-    transform: translateY(10%); 
-    
+    transform: translateY(-50%); 
     height: 35px;
     background-color: #00b5e2; 
     color: white; 
@@ -507,46 +506,62 @@
     margin-top: 6rem;
 } 
     
-/* For screens that are smaller than 1200px */
- @media (max-width: 1200px) {
-     .ul {
-         grid-template-columns: repeat(5, 1fr); 
-     }
-     .N-title {
-         font-size: 2.5rem; 
-         margin-left: 5%;  
-     }
-     #text {
-         font-size: 1rem; 
-         margin-left: 5%;
-     }
-     #N-search {
-         width: 250px;
-     }
- }
- 
- /* For screens smaller than 768px (Mobile/Tablets) */
- @media (max-width: 768px)/* Prevents any space below the image */ {
-     ul {
-         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-     }
-     .N-title {
-         font-size: 1.8rem;
-         margin-left: 5%;
-     }
-     #text {
-         font-size: 0.9rem;
-         margin-left: 5%;
-     }
-     .N-button {
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    /* Adjusts the grid layout to 5 columns instead of the default layout for the 'ul' element */
+    .ul {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+
+    /* Reduces the font size and adjusts the left margin for the title */
+    .N-title {
+        font-size: 2.5rem; 
+        margin-left: 5%;  
+    }
+
+    /* Adjusts the font size and margin for the text block */
+    #text {
+        font-size: 1rem; 
+        margin-left: 5%;
+    }
+
+    /* Resizes the search input field */
+    #N-search {
+        width: 250px;
+    }
+}
+
+/* For screens smaller than 768px (Mobile/Tablets) */
+@media (max-width: 768px) {
+    /* Adjusts the grid layout to 5 equal columns in the 'ul' element */
+    ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    /* Decreases the font size and adjusts the margin for the title */
+    .N-title {
+        font-size: 1.8rem;
+        margin-left: 5%;
+    }
+
+    /* Reduces the font size and adjusts the margin for the text block */
+    #text {
+        font-size: 0.9rem;
+        margin-left: 5%;
+    }
+
+    /* Resizes the button to 30% width for better mobile usability */
+    .N-button {
         width: 30%;
-     }
-     #N-search {
-         width: 90%; 
-     }
-  
-     
-     .N-container {
+    }
+
+    /* Expands the search input to take up most of the container */
+    #N-search {
+        width: 90%; 
+    }
+
+    /* Modifies the layout of the N-container, using grid layout with 2 columns and 3 rows */
+    .N-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
         grid-template-rows: repeat(3, 1fr); 
@@ -557,12 +572,14 @@
         margin-top: 10rem;
     }
 
+    /* Ensures icons fit in the available space and maintain aspect ratio */
     .N-icon {
         width: 100%;
         height: auto; 
         object-fit: cover;
     }
 
+    /* Organizes the icons in a 2-column grid */
     .N-icons {
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
@@ -571,103 +588,97 @@
         margin: 0 auto; 
         z-index: 3;
     }
-     .N-search-container{
+
+    /* Hides the search container for smaller screens */
+    .N-search-container {
         display: none;
-     }
-     #text{
+    }
+
+    /* Adds spacing to the text for better mobile layout */
+    #text {
         margin-top: 2rem;
-     }
-     .N-screen{
-        display: none;
-     }
-     .N-phone{
-        display: none;
+    }
 
-     }
-     .card{
-        display: none;
-     }
-     .pay-rec{
-        display: none;
-     }
-     .card-info{
-        display: none;
-     }
-     .email-box{
-        display: none;
-     }
-     .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rce2, .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, .stat-img, .stat1-img, .N-phone-background-fade{
-        display: none;
-     }
- }
- 
- 
- @media (max-width: 600px){
-    .N-button{
+    /* Hides elements related to the phone UI for small screens */
+    .N-screen, .N-phone, .card, .pay-rec, .card-info, .email-box, 
+    .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rec2, 
+    .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, 
+    .stat-img, .stat1-img, .N-phone-background-fade {
         display: none;
     }
-    .N-list{
+    .N-paralelogrami{
+        width: 100%;
+    }
+}
+
+/* For even smaller screens (600px) */
+@media (max-width: 600px) {
+    /* Hides the button and navigation menu on very small screens */
+    
+    .N-button, .N-list, .N-screen {
         display: none;
     }
- 
-    .N-screen{
+    .N-paralelogrami{
+        width: 100%;
+    }
+}
+
+/* For extremely small screens (480px or less) */
+@media (max-width: 480px) {
+    /* Hides the navigation list on the smallest screens */
+    
+    .N-list {
         display: none;
     }
- }
- @media (max-width: 480px) {
-    .N-list{
-        display: none;
-    } 
+    .N-paralelogrami{
+        width: 100%;
+    }
+
+    /* Adjusts the font size and margin for the title */
     .N-title {
-         font-size: 1.5rem; 
-         margin-left: 5%;
-     }
-     #text {
-         font-size: 0.8rem;
-         margin-left: 5%;
-     }
-     .N-button {
-         display: none;
-     }
-     #N-search {
-         width: 80%; 
-     }
-     .N-icons {
-         grid-template-columns: 1fr 1fr; 
-     }
-     .N-screen{
-        display: none;
-     }
-     .N-phone{
-        display: none;
+        font-size: 1.5rem; 
+        margin-left: 5%;
+    }
 
-     }
-     .card{
-        display: none;
-     }
-     .pay-rec{
-        display: none;
-     }
-     .card-info{
-        display: none;
-     }
-     .email-box{
-        display: none;
-     }
-     .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rce2, .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, .stat-img, .stat1-img, .N-phone-background-fade{
-        display: none;
-     }
+    /* Adjusts the font size and margin for the text */
+    #text {
+        font-size: 0.8rem;
+        margin-left: 5%;
+    }
 
- }
- @keyframes moveGradient {
-     0% {
-         background-position: 0% 50%;  
-     }
-     50% {
-         background-position: 100% 50%; 
-     }
-     100% {
-         background-position: 0% 50%;  
-     }
- 
- }
+    /* Hides the button on smaller screens */
+    .N-button {
+        display: none;
+    }
+
+    /* Adjusts the search input width to fit smaller screens */
+    #N-search {
+        width: 80%; 
+    }
+
+    /* Modifies the grid layout for icons, reducing to 2 columns */
+    .N-icons {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    /* Hides all elements related to phone UI and other non-essential sections for small screens */
+    .N-screen, .N-phone, .card, .pay-rec, .card-info, .email-box, 
+    .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rec2, 
+    .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, 
+    .stat-img, .stat1-img, .N-phone-background-fade {
+        display: none;
+    }
+}
+
+/* Animation for a moving gradient background effect */
+@keyframes moveGradient {
+    0% {
+        background-position: 0% 50%;  
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%;  
+    }
+}
