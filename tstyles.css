@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    
-}
+
 html{
     margin: 0;
     padding: 0;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #f8f9fc;
     overflow-x: hidden;
     font-family: "Inter", serif;
@@ -565,8 +563,23 @@ body {
     border: none;
     cursor: pointer;
     margin-top: 30px;
+    transition: 0.5s ease-in-out;
 }
-
+.tpayment-button{
+    transition: 0.5s ease-in-out;
+}
+.trecurring-button{
+    transition: 0.5s ease-in-out;
+}
+.trecurring-button:hover{
+    background-color: black;
+}
+.tissuing-button:hover{
+    background-color: black;
+}
+.tpayment-button:hover{
+    background-color: black;
+}
 .tissuingfooter {
     margin-top: 50px;
 }
@@ -635,12 +648,15 @@ body {
 .tGray{
     background: linear-gradient(to bottom right, #112D4E, #0C223A);
     box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     color: #fff;
     font-weight: 500; 
     font-size: 15px;
     padding: 40px;
     font-family: "Source Code Pro", serif !important;
+    background: linear-gradient(to bottom, #020A18, #0C223A);
+    background-size: 200% 200%;
+    animation: backgroundmotionn 5s infinite linear;
 }
 .tgray span{
     text-align: left;
@@ -664,6 +680,10 @@ body {
     font-size: 15px;
     padding: 40px;
     font-family: "Source Code Pro", serif !important;
+    background: linear-gradient(to bottom, #020A18, #0C223A);
+    background-size: 200% 200%;
+    animation: backgroundmotion 2s infinite linear;
+
 }
 
 
@@ -714,6 +734,35 @@ body {
 }
 
 /* keyframes */
+@keyframes backgroundmotionn {
+    0% {
+        background: linear-gradient(to bottom, #020A18, #0C223A);
+        background-position: 0% 100%;
+    }
+    50% {
+        background: linear-gradient(to bottom, #0C223A, #1A3D5F);
+        background-position: 0% 50%;
+    }
+    100% {
+        background: linear-gradient(to bottom, #020A18, #0C223A);
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes backgroundmotion {
+    0% {
+        background: linear-gradient(to bottom, #020A18, #0C223A);
+        background-position: 0% 0%;
+    }
+    50% {
+        background: linear-gradient(to bottom, #0C223A, #1A3D5F);
+        background-position: 0% 50%;
+    }
+    100% {
+        background: linear-gradient(to bottom, #020A18, #0C223A);
+        background-position: 0% 100%;
+    }
+}
 
 @keyframes slideIn {
     from {
@@ -726,24 +775,27 @@ body {
     }
 }
 
-/* Initial State (keeps elements hidden before animation starts) */
+.ts-rightside,
+.trightpayment,
+.tpay-box,
 .tcontainer,
-.t-container,
-.ts-rightside {
-    position: relative; /* Prevents layout shifts */
+.t-container {
+    position: relative; 
     transform: translateX(100%);
     opacity: 0;
 }
 
-/* When in Viewport, Trigger Animation */
+.ts-rightside.slideIn,
+.trightpayment.slideIn,
+.tpay-box.slideIn,
 .tcontainer.slideIn,
-.t-container.slideIn,
-.ts-rightside.slideIn {
+.t-container.slideIn {
     animation: slideIn 0.6s ease-out forwards;
 }
 
+
   
-  
+
 
 @media (max-width: 768px) {
     body{
@@ -868,7 +920,7 @@ body {
 /* 390px - Further reduce sizes and enforce column layout */
 @media (max-width: 390px) {
     body{
-        overflow-x: hidden;
+        overflow-x: hidden !important;
     }
     .tmodular-solutions {
         flex-direction: column;
@@ -893,7 +945,7 @@ body {
         flex-direction: column;
         margin-right: 0;
         padding: 0;
-        width: 600px;
+        width: 500px;
         height: 2400px;
     }
     .tTopdev {
@@ -992,7 +1044,7 @@ body {
         font-weight: 600;
         margin-top: 40px;
     }
- 
+    
     .tconnect{
         margin-left: 100px;
     }
