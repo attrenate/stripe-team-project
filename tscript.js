@@ -1,3 +1,4 @@
+// here is eventlistener for sections animation slidein comes right to left
 document.addEventListener('DOMContentLoaded', function() {
     // Select all elements to animate
     var slideElements = document.querySelectorAll('.ts-rightside, .trightpayment, .tpay-box, .tcontainer, .t-container');
