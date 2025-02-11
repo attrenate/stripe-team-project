@@ -1,15 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Inter", serif;
+    
+}
+html{
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-color: #f8f9fc;
-    
+    overflow-x: hidden;
+    font-family: "Inter", serif;
 }
+
 
 /* Section 1 styles - Modular Solutions */
 .tmodular-solutions {
@@ -522,7 +529,7 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-left: 200px;
-    margin-right: 200px;
+    margin-right: 100px;
     margin-top: 400px;
 }
 
@@ -564,9 +571,203 @@ body {
 }
 .tright-issuing{
     margin-top: 150px;
+    margin-left: 150px;
 }
 /* section 10  */
 
+.tBlueBackground{
+    overflow: hidden;
+    width: 100%px;
+    height: 1000px;
+    background-color: #112D4E;
+   
+
+}
+
+.tTopdev{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.tLeftDev{
+    width: 540;
+    height: 417;
+}
+.tdevTopHeader{
+    font-weight: 500;
+    font-size: 17px;
+    color: #00D4FF;
+}
+.tLeftDev h1{
+    font-weight: 500;
+    font-size: 36px;
+    color: #fff;
+    margin-top: 60px;
+}
+.tLeftDev p{
+    margin-bottom: 70px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #ADBDCC;
+}
+.tDevButton{
+    margin-top: 30px;
+    background-color: #00D4FF;
+    font-weight: 700;
+    width: 140px;
+    height: 35px;
+    border-radius: 16px;
+    color: #0A2540;
+    padding: 7px;
+}
+.tGray{
+    background: linear-gradient(to bottom right, #112D4E, #0C223A);
+    box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500; 
+    font-size: 15px;
+    padding: 40px;
+    font-family: "Source Code Pro", serif !important;
+}
+.tgray span{
+    text-align: left;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: "Source Code Pro", serif !important;
+}
+.tyellow-word{
+    color: #FFA956;
+    font-weight: 600;
+}
+.tgray-word{
+    color: gray;
+}
+.tBlue{
+    background: linear-gradient(to bottom right,     #020A18, #0C223A);
+    box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
+    border-radius: 0px 0px 10px 10px;
+    color: #fff;
+    font-weight: 500; 
+    font-size: 15px;
+    padding: 40px;
+    font-family: "Source Code Pro", serif !important;
+}
 
 
+.tdevbottom{
+    
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 250px;
+}
+.tbottom-setting{
+    width: 270px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+.tbottom-setting img{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.tbottom-setting h1{
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+.tbottom-setting p{
+    font-weight: 500;
+    font-size: 14px;
+    color: #ADBDCC;
+    margin-top: 30px;
+}
+.tbottom-setting a{
+    text-decoration: none;
+    color: #00D4FF;
+    font-size: 14;
+    font-weight: 600;
+    margin-top: 40px;
+}
 
+
+/* responsive */
+
+/* Default styles for large screens (above 1024px) */
+
+/* 1024px - Adjust if necessary */
+@media (max-width: 1024px) {
+    
+}
+
+/* 768px - Switch to column layout and divide sizes by 2 */
+@media (max-width: 768px) {
+    .tmodular-solutions{
+        flex-direction: column;
+    }
+    .tpayments{
+        flex-direction: column;
+    }
+    .trecurring-revenue{
+        flex-direction: column;
+    }
+    .tconnect{
+        flex-direction: column;
+    }
+    .tissuing{
+        flex-direction: column;
+    }
+    .tBlueBackground{
+        flex-direction: column;
+    }
+
+    .tleft-connect{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tleft-issuing{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   
+
+}
+
+/* 390px - Further reduce sizes */
+@media (max-width: 390px) {
+    .tmodular-solutions{
+        flex-direction: column;
+    }
+    .tpayments{
+        flex-direction: column;
+    }
+    .trecurring-revenue{
+        flex-direction: column;
+    }
+    .tconnect{
+        flex-direction: column;
+    }
+    .tissuing{
+        flex-direction: column;
+    }
+    .tBlueBackground{
+        flex-direction: column;
+    }
+}
