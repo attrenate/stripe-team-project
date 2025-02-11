@@ -14,84 +14,253 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.a-ready-to-get-started{
-    width: 1920px;
-    height: 656px;
-
-}
-
-.a-readytogetstarted-margin-container{
-    padding-right: 420px;
-padding-left: 420px;
-width: 1080px;
-height: 656px;
-max-width: 1080px;
-padding-top: 128px;
-padding-bottom: 287px;
-}
-
-.a-readytogetstarted-position{
-    width: 1080px;
-    height: 241px;
-}
-
-.a-readytogetstarted-1s{
-    width: 540px;
-    height: 241px;
-
-}
-
-.a-rtgs-2s{
-    width: 270px;
-    height: 177px;
-}
-
-a-rtgs-3s{
-    width: 270px;
-    height: 177px;
-}
-
-.a-rtgs-h1{
-    width: 412px;
-    height: 32px;
-    font-family: Inter;
-    font-weight: 500;
-    font-size: 22.13px;
-    line-height: 32px;
-    letter-spacing: 0.1px;
-    color: rgba(10, 37, 64, 1);
-}
-
-.a-rtgs-paragraph{
-    width: 412px;
-height: 112px;
-font-family: Inter;
-font-weight: 500;
-font-size: 16.45px;
-line-height: 28px;
-    letter-spacing: 0.2px;
-    color: rgba(66, 84, 102, 1);
-    
-
-}
-
-a{
-    text-decoration: none;
-    color: rgba(99, 91, 255, 1);
-
+.a-readytogetstarted-margin-container {
+  padding-right: 240px;
+  padding-left: 210px;
+  width: 1080px;
+  height: 656px;
+  max-width: 1080px;
+  padding-top: 135px;
+  padding-bottom: 287px;
 }
 
 .a-readytogetstarted-position {
-    display: flex;
-    justify-content: space-between; /* Adjust spacing between sections */
-    align-items: flex-start; /* Align items at the top */
-    gap: 20px; /* Add spacing between sections */
-    flex-wrap: wrap; /* Ensures responsiveness */
-  }
-  
-  .a-readytogetstarted-1s,
-  .a-rtgs-2s,
-  .a-rtgs-3s {
-    flex: 1; 
-  }
-  
+  width: 1080px;
+  height: 241px;
+  display: flex;
+  justify-content: space-between; /* Adjust spacing between sections */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Add spacing between sections */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.a-readytogetstarted-1s,
+.a-rtgs-2sn3s {
+  flex: 1;
+}
+
+.a-rtgs-2sn3s {
+  display: flex;
+  gap: 20px; /* Optional: Add space between the sections */
+}
+
+.a-rtgs-2s,
+.a-rtgs-3s {
+  flex: 1; /* Makes both sections take equal width */
+  display: flex;
+  flex-direction: column;
+}
+
+.a-readytogetstarted-1s {
+  width: 540px;
+  height: 241px;
+}
+
+.a-rtgs-2s {
+  width: 270px;
+  height: 177px;
+}
+
+.a-rtgs-3s {
+  width: 270px;
+  height: 177px;
+  margin-top: 18px;
+}
+
+.a-rtgs-h1 {
+  width: 412px;
+  height: 32px;
+  font-family: Inter;
+  font-weight: 500px;
+  font-size: 23px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: rgba(10, 37, 64, 1);
+}
+
+.a-rtgs-paragraph {
+  width: 412px;
+  height: 112px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: rgba(66, 84, 102, 1);
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(99, 91, 255, 1);
+}
+
+.a-rtgs-footer-1s {
+  display: flex;
+  justify-content: space-between; /* Optional: space between elements */
+  align-items: center; /* Optional: vertically align the content */
+  margin-top: 20px;
+}
+
+.a-rtgs-footer-1s-container {
+  display: flex;
+  gap: 15px; /* Optional: Add space between items inside the container */
+}
+.a-rtgs-1s-button {
+  width: 115px;
+  height: 35px;
+  background-color: #635bff; /* Change color as needed */
+  border: none;
+  color: white;
+  border-radius: 30px;
+  justify-content: center;
+  font-family: Inter;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  font-weight: bold;
+}
+
+.a-rtgs-footer-p {
+  font-size: 14px;
+  color: #635bff; /* Adjust color */
+  font-family: Inter;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.a-rtgs-paragraph-3s,
+.a-rtgs-paragraph-2s {
+  width: 220px;
+  height: 48px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #425466;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+
+.a-rtgs-footer-p-2s,
+.a-rtgs-footer-p-3s {
+  font-size: 14px;
+  color: #635bff; /* Adjust color */
+  font-family: Inter;
+  font-weight: bold;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  justify-content: center;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+
+.a-rtgs-2sh4,
+.a-rtgs-3sh4 {
+  width: 200px;
+  height: 24px;
+  font-family: Inter;
+  font-size: 14.06px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #0a2540;
+}
+
+.a-rtgs-3s-vertical-h4,
+.a-rtgs-2s-vertical-h4 {
+  display: flex; /* Aligns the child elements side by side */
+  align-items: center; /* Vertically aligns the content */
+  gap: 10px; /* Optional: Add some space between the two elements */
+}
+
+.a-rtgs-3s-vertical,
+.a-rtgs-2s-vertical {
+  width: 1px; /* Adjust width of the vertical divider */
+  height: 15px; /* Adjust height as needed */
+  background-color: #635bff; /* Set the color of the vertical divider */
+}
+
+.a-rtgs-3sh4,
+.a-rtgs-2sh4 {
+  display: flex;
+  align-items: center; /* Center the h4 vertically within the div */
+}
+
+.a-readytogetstarted-background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(240, 248, 255);
+  clip-path: polygon(0 0, 100% 0%, 100% 67%, 0 87%);
+  z-index: 1;
+}
+
+.a-readytogetstarted-main-visual-container {
+  position: relative;
+  z-index: 2;
+}
+
+.a-rtgs-background-bottoms {
+  display: flex; /* Enables flexbox layout */
+  justify-content: space-between; /* Distribute space evenly between the two child divs */
+  width: 100%; /* Full width of the viewport */
+  position: absolute;
+  top: 0;
+}
+.a-rtgs-bottom12,
+.a-rtgs-bottom34 {
+  display: flex; /* Make both divs use flexbox */
+}
+
+.a-rtgs-bottom34 {
+  /* This will be aligned to the right */
+  justify-content: flex-end; /* Align items to the right */
+}
+
+.a-rtgs-bottom1,
+.a-rtgs-bottom2,
+.a-rtgs-bottom3,
+.a-rtgs-bottom4 {
+  position: absolute; /* Instead of absolute */
+  z-index: 100; /* Keep the z-index high to ensure visibility */
+}
+
+.a-rtgs-bottom1 {
+  margin-top: 375px;
+  width: 300px;
+  height: 400px;
+  background-color: rgba(122, 115, 255, 0.5);
+  clip-path: polygon(0 27%, 100% 21%, 100% 31%, 0 37%);
+}
+
+.a-rtgs-bottom2 {
+  margin-left: 50px;
+  margin-top: 345px;
+  width: 200px;
+  height: 400px;
+  background-color: rgba(128, 233, 255, 0.5);
+  clip-path: polygon(0 27%, 100% 23%, 100% 33%, 0 37%);
+}
+
+.a-rtgs-bottom3 {
+  margin-top: 240px; /* Adjust for desired vertical positioning */
+  width: 300px;
+  height: 400px;
+  background-color: rgba(128, 233, 255, 0.5);
+  clip-path: polygon(0 39%, 100% 31%, 100% 41%, 0 49%);
+}
+
+.a-rtgs-bottom4 {
+  margin-top: 265px; /* Adjust for desired vertical positioning */
+  width: 200px;
+  height: 400px;
+  background-color: rgba(122, 115, 255, 0.5);
+  clip-path: polygon(0 38%, 100% 32%, 100% 41%, 0 47%);
+  margin-right: 50px;
+}
+
+
