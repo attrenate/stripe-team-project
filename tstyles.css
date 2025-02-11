@@ -18,7 +18,7 @@ body {
     margin-left: 200px;
     margin-right: 200px;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .ts-leftside span {
@@ -39,7 +39,9 @@ body {
     font-size: 17px;
     font-weight: 200;
 }
-
+.ts-rightside{
+    margin-top: 150px;
+}
 /* Section 2 - Payments */
 .tpayments {
     display: flex;
@@ -47,7 +49,7 @@ body {
     align-items: center;
     margin-left: 200px;
     margin-right: 200px;
-    margin-top: 200px;
+    margin-top: 400px;
 }
 
 .tleftpayment {
@@ -58,14 +60,14 @@ body {
     font-weight: 700;
     font-size: 36px;
     color: #0A2540;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .tpayments p {
-    font-weight: 400;
+    font-weight: 1000;
     font-size: 18px;
     color: #425466;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .tpayment-button {
@@ -77,7 +79,7 @@ body {
     font-size: 14px;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .tpaymentfooter {
@@ -221,7 +223,6 @@ body {
     margin-left: 200px;
     margin-right: 200px;
     margin-top: 400px;
-    flex-wrap: wrap;
 }
 
 .trecurring-leftside {
@@ -234,7 +235,7 @@ body {
     font-weight: 700;
     font-size: 36px;
     color: #0A2540;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .trecurring-leftside p {
@@ -386,4 +387,186 @@ body {
 
 
  /* section 4 connect */
+.tconnect{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    margin-top: 400px;
+}
+ 
+
+/* connect right side */
+
+.t-container {
+    width: 331px;
+    height: 450px;
+    border-radius: 9.53px;
+    margin-right:100px;
+    border: 1.19px solid #e0e0e0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tleft-connect h1{
+    margin-bottom: 50px;
+}
+.tleft-connect p{
+    margin-bottom: 50px;
+}
+.tpayment-button{
+    margin-bottom: 30px;
+}
+
+/* Header Section */
+.t-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.t-transaction{
+    margin-top: 30px;
+}
+.t-transaction {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.t-processing-label {
+    display: inline-block;
+    background: #e0f7e9;
+    color: #0f9d58;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-bottom: 4px;
+}
+
+.t-total-amount {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 8px;
+}
+
+/* Flow Section */
+.t-flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.t-flow-item {
+    background: #f2f8ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    width: fit-content;
+    border: 1px solid #007bff;
+}
+
+.t-platform {
+    background: #e0f7fa;
+    color: #00796b;
+    border: 1px solid #00796b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 12px;
+}
+
+.t-fee {
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+.t-flow-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+
+.t-flow-arrow {
+    width: 10px;
+    height: 30px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2v20m0 0l-5-5m5 5l5-5" stroke="%23007bff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px 0;
+}
+
+
+.t-sellers {
+    background: #f2f8ff;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+/* section 5 issuing */
+.tissuing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 400px;
+}
+
+
+.tleft-issuing h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #0A2540;
+    margin-top: 40px;
+}
+
+.tleft-issuing p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #425466;
+    margin-top: 60px;
+}
+
+.tissuing-button {
+    background-color: #635BFF;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.tissuingfooter {
+    margin-top: 50px;
+}
+
+.tblue-word {
+    font-weight: 700;
+    color: #635BFF;
+    cursor: pointer;
+}
+.tright-issuing{
+    margin-top: 150px;
+}
+/* section 10  */
+
+
+
 
