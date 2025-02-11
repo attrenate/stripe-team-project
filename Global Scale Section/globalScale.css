@@ -8,8 +8,8 @@
 }
 
 body {
-  width: 100%; /* Changed: Use 100% width for responsive design instead of fixed 1920px */
-  height: 100%; /* Changed: Set height to 100% to allow content to scale */
+  width: 100%;
+  height: 100%;
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
 }
@@ -18,111 +18,112 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; /* Changed: Set width to 100% */
+  width: 100%;
   height: 100vh;
-  background-color: #0A2540; /* Background color */
+  background-color: #0A2540;
   clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 100%, 0 14%);
-  z-index: 1; /* Ensure it stays behind other content */
-  background-image: url(image.png); /* Add your image URL here */
-  background-size: cover; /* Make the background image cover the element */
-  background-repeat: no-repeat; /* Prevent repeating of the image */
-
-
+  z-index: 1;
+  background-image: url(image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .aGlobal-Scale-Main-Info {
-  width: 1080px; /* Fixed width for larger screens */
-  height: 911px; /* Fixed height */
+  width: 90%; /* Use 90% for better flexibility */
+  max-width: 1080px; /* To limit the width on very large screens */
+  height: auto; /* Allow height to grow */
   position: relative;
   z-index: 2;
-  
+  margin-left: auto;
+  margin-right: auto;
 }
 
+
 .a-global-scale-main-heading {
-  margin-top: 20px;
-  width: 674px;
-  height: 96px;
+  margin-top: 2%;
+  width: 60%; /* Use percentage width */
+  height: auto; /* Allow height to adjust */
   margin-bottom: 20px;
-  margin-right: 400px;
   color: white;
-  font-size: 22px;
+  font-size: 1vw; /* Make font size responsive */
 }
 
 .a-main-info-two-sections {
-  width: 1080px; /* Fixed width */
-  height: 496px;
-  gap: 96px;
+  width: 100%; /* Full width for responsiveness */
+  height: auto; /* Let the height adjust based on content */
+  gap: 5%; /* Reduced gap to make it responsive */
 }
 
 .a-main-info-first-section {
-  width: 1080px; /* Fixed width */
-  height: 312px;
+  width: 100%; /* Full width */
+  height: auto; /* Allow height to adjust */
+  
 }
 
 .a-heading-one {
-  width: 810px; /* Fixed width */
-  height: 148px;
-  padding: 0px 120px 0px 16px;
-  gap: 24px;
-  margin-left: 150px;
-  margin-top: 200px;
+  width: 100%; /* Use full width */
+  padding: 0px 4%; /* Adjust padding to be relative */
+  gap: 2%;
+  margin-top: 5%;
+}
+.a-main-heading{
+  width: 50%; /* Reduced width for a smaller container */
+  height: auto;
+  padding: 0px 5% 0px 0px; /* Adjusted padding to make it more compact */
+  gap: 2%;
+  margin-top: 2%; /* Adjust top margin to maintain spacing */
 }
 
 .a-main-pharagraph {
-  width: 200px; /* Fixed width */
+  width: 50%; /* Set a relative width for responsiveness */
   height: auto;
-  padding: 0px 112px 0px 16px;
+  padding: 0px 4%;
   color: #ADBDCC;
-  margin-right: 350px;
-  margin-left: 150px;
-  margin-bottom:50px;
   line-height: 1.5;
-  word-wrap: break-word; /* Ensure text wraps correctly */
+  word-wrap: break-word;
   white-space: normal;
+  
+}
 
+.a-main-p{
+  margin-right: 10%;
 }
 
 .a-main-info-second-section {
-  width: 1080px; /* Fixed width */
-  height: 88px;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   z-index: 3;
-  margin-left: 150px;
-  
+  margin-top: 2%;
 }
 
 .a-2s-section {
-  width: 270px; /* Fixed width */
-  height: 88px;
-  gap: 8px;
-  margin-left: 50px;
+  width: 30%; /* Set width to percentage for responsiveness */
+  height: auto;
+  margin-left: 2%;
+  margin-top: 5%;
 }
 
 .a-2s-section-header {
-  width: 270px; /* Fixed width */
-  height: 32px;
-  
-  
+  width: 100%; /* Full width for better layout */
+  height: auto;
 }
 
 .a-2s-1s-paragraph {
-  width: 270px; /* Fixed width */
-  height: 48px;
-  
+  width: 100%; /* Use full width */
+  height: auto;
 }
 
 .a-2s-section-vertical {
   width: 1px;
-  height: 24px;
+  height: 1em;
   background: #00d4ff;
 }
 
 .a-2s-section-header-paragraph {
-  width: 222px; /* Fixed width */
-  height: 32px;
-  margin-top: -27.5px;
-  margin-left: 17px;
+  width: 90%; /* Adjust width for responsiveness */
+  margin-left: 5%;
   color: white;
 }
 
@@ -132,116 +133,283 @@ a {
 }
 
 .a-2s-section-p {
-  width: 84px;
-  height: 32px;
+  width: 80%; /* Set width relative to its parent */
   font-family: Inter;
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 32px;
-  letter-spacing: 0.1px;
+  font-size: 1.5vw; /* Make font size responsive */
+  line-height: 1.5;
   text-align: left;
-  text-underline-position: from-font;
+  margin-top: -10%;
 }
 
 .a-2s-section-main-paragraph {
-  width: 270px; /* Fixed width */
-  height: 48px;
-  padding: 0px 32px 0px 16px;
-  margin-left: 19px;
+  width: 90%; /* Use relative width */
+  padding: 0px 2%;
   color: #ADBDCC;
-  margin-top: 7px;
+  margin-left: 5%;
+  font-size: 1.5vw;
+  
+  
 }
 
 .a-2s-main-p {
-  width: 222px; /* Fixed width */
-  height: 48px;
+  width: 90%;
   font-family: Inter;
-  font-size: 13.5px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.2px;
+  font-size: 1vw; /* Adjust font size for smaller devices */
+  line-height: 1.8em;
   text-align: left;
 }
 
 .a-global-scale {
   color: #00D4FF;
-  
+  margin-top: 15%;
 }
 
 /* Responsive adjustments */
 
-/* For screens 1024px and above */
-@media (min-width: 1024px) {
-  body {
-    width: 100%; /* Changed: Use 100% width for responsive design */
-    height: 100%; /* Changed: Set height to 100% for better scaling */
-  }
-
+/* Large Screen (1920px and above) */
+@media (min-width: 1920px) {
   .aGlobal-Scale-Main-Info {
-    width: 90%; /* Changed: Scale the width to 90% of the screen */
-    margin-left: auto; /* Changed: Auto margin for centering */
-    margin-right: auto; /* Changed: Auto margin for centering */
-    margin-top: 5%; /* Changed: Adjusted margin-top for better positioning */
+    width: 80%; /* Slightly smaller width */
+    max-width: 1080px;
   }
 
   .a-global-scale-main-heading {
-    font-size: 24px; /* Changed: Increased font size slightly for larger screens */
-    width: 30%; /* Changed: Make the heading width 100% for better responsiveness */
+    width: 50%; /* Smaller heading */
+    font-size: 1vw; /* Font size adjusted */
   }
 
   .a-main-info-two-sections {
-    width: 90%; /* Changed: Set the width to 90% for responsiveness */
-    height: auto; /* Changed: Auto height to allow content to grow */
-    gap: 40px; /* Changed: Reduced gap for better spacing on large screens */
+    gap: 4%; /* Reduce gap for better spacing */
   }
 
   .a-main-info-first-section {
-    width: 100%; /* Changed: Make this section width 100% */
-  }
-
-  .a-heading-one{
-    width: 100%; /* Changed: Set width to 100% for better flexibility */
-    padding: 0px 16px; /* Changed: Reduced padding for responsiveness */
+    margin-left: -5%; /* Adjust left margin */
   }
 
   .a-main-pharagraph {
-    width: 30%; /* Changed: Set width to 100% for better flexibility */
-    padding: 0px 16px; /* Changed: Reduced padding for responsiveness */
-  }
-
-  .a-main-info-second-section {
-    margin-top: 30px; /* Changed: Reduced margin-top for better alignment */
+    width: 40%; /* Set relative width for large screens */
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .a-2s-section {
-    width: 250px; /* Changed: Adjust width for better layout on larger screens */
+    width: 25%;
   }
 
-  .a-2s-section-header {
-    width: 100%; /* Changed: Set width to 100% for responsiveness */
-    padding: 0px 16px; /* Changed: Reduced padding */
-  }
-
-  .a-2s-1s-paragraph,
-  .a-2s-section-main-paragraph {
-    width: 100%; /* Changed: Set width to 100% */
-  }
-
-  .a-2s-main-p {
-    font-size: 14px; /* Changed: Increased font size slightly */
-    line-height: 26px; /* Changed: Increased line-height for readability */
+  .a-2s-section-p {
+    font-size: 1.3vw; /* Slightly larger font size */
   }
 }
 
-/* For larger screens 1920px and above */
-@media (min-width: 1920px) {
+/* Medium-Large Screen (1440px) */
+@media (min-width: 1440px) {
   .aGlobal-Scale-Main-Info {
-    width: 80%; /* Changed: Adjust for very large screens */
-    margin-left: auto;
-    margin-right: auto;
+    width: 85%;
+  }
+
+  .a-global-scale-main-heading {
+    width: 55%; /* Slightly larger heading */
+    font-size: 1.2vw;
+  }
+
+  .a-main-info-two-sections {
+    gap: 5%;
+  }
+
+  .a-main-info-first-section {
+    margin-left: -3%;
+  }
+
+  .a-main-pharagraph {
+    width: 45%;
   }
 
   .a-2s-section {
-    width: 270px; /* Restored fixed width for very large screens */
+    width: 28%;
+  }
+
+  .a-2s-section-p {
+    font-size: 1.4vw;
+  }
+}
+
+/* Medium Screen (1024px) */
+@media (max-width: 1024px) {
+  .aGlobal-Scale-Main-Info {
+    width: 90%; /* Adjust for mid-sized screens */
+    padding: 0 5%;
+    margin-top: 10%;
+  }
+
+  .a-global-scale-main-heading {
+    width: 100%; /* Full width for heading */
+    font-size: 2vw; /* Adjust font size for better readability */
+    text-align: start; /* Center the heading for smaller screens */
+  }
+
+  .a-main-info-two-sections {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 5%; /* Adjust gap for readability */
+  }
+
+  .a-main-info-first-section,
+  .a-main-info-second-section {
+    width: 100%; /* Full width for both sections */
+    margin-left: 0; /* Remove margin */
+  }
+
+  .a-heading-one {
+    width: 100%; /* Full width for heading */
+    padding: 0 4%;
+    margin-top: 5%;
+    text-align: start; /* Center the heading */
+  }
+
+  .a-main-pharagraph {
+    width: 100%; /* Full width for paragraph */
+    font-size: 1.2vw; /* Adjust font size */
+    text-align: start; /* Center the paragraph */
+  }
+
+  .a-2s-section {
+    width: 100%; /* Full width for section */
+    margin-top: 5%;
+  }
+
+  .a-2s-section-p {
+    font-size: 1.5vw;
+    text-align: start;
+    margin-top: -13%;
+    
+  }
+
+  .a-2s-section-main-paragraph {
+    font-size: 1.5vw;
+    margin-left: 1%;
+    text-align: start;
+  }
+}
+
+/* Small-Medium Screen (768px) */
+@media (max-width: 768px) {
+  .aGlobal-Scale-Main-Info {
+    width: 100%;
+    padding: 0 5%;
+  }
+
+  .a-global-scale-main-heading {
+    width: 100%; /* Full width for heading */
+    font-size: 2vw; /* Increase font size */
+    text-align: start; /* Center the heading */
+  }
+
+  .a-main-info-two-sections {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 10%; /* Increase gap between sections for better readability */
+  }
+
+  .a-main-info-first-section,
+  .a-main-info-second-section {
+    width: 100%; /* Full width for both sections */
+    margin-left: 0;
+  }
+
+  .a-heading-one {
+    width: 100%; /* Full width */
+    padding: 0 4%;
+    margin-top: 5%;
+    text-align: start; /* Center the heading */
+    font-size: 1.5vw;
+  }
+
+  .a-main-pharagraph {
+    width: 100%; /* Full width for paragraph */
+    font-size: 1rem; /* Adjust font size */
+    text-align: start; /* Center the paragraph */
+  }
+
+  .a-2s-section {
+    width: 100%; /* Full width for section */
+    margin-left: 0;
+    margin-bottom: 10%; /* Add margin for spacing */
+
+    
+   
+  }
+
+  .a-2s-section-p {
+    font-size: 2.5vw;
+    text-align: start;
+    margin-top: -13%;
+  
+  }
+  .a-2s-section-vertical {
+    height: 0.5em;
+
+  }
+
+
+  .a-2s-section-main-paragraph {
+    font-size: 2vw;
+    padding: 0 4%;
+    text-align: center;
+  }
+}
+
+/* Extra Small Screen (390px) */
+@media (max-width: 390px) {
+  .aGlobal-Scale-Main-Info {
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  .a-global-scale-main-heading {
+    width: 100%; /* Full width for heading */
+    font-size: 2vw; /* Larger font size for small screens */
+    text-align: start; /* Center the heading */
+  }
+
+  .a-main-info-two-sections {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 15%; /* Increase gap between sections */
+  }
+
+  .a-main-info-first-section,
+  .a-main-info-second-section {
+    width: 100%; /* Full width for both sections */
+    margin-left: 0;
+  }
+
+  .a-heading-one {
+    width: 100%; /* Full width */
+    padding: 0 4%;
+    margin-top: 5%;
+    text-align: start; /* Center the heading */
+  }
+
+  .a-main-pharagraph {
+    width: 100%; /* Full width for paragraph */
+    font-size: 0.6rem; /* Adjust font size */
+    text-align: start; /* Center the paragraph */
+  }
+
+  .a-2s-section {
+    width: 100%; /* Full width for section */
+    margin-left: 0;
+    margin-bottom: 10%; /* Add margin for spacing */
+  }
+
+  .a-2s-section-p {
+    font-size: 3vw;
+    text-align: start;
+  }
+
+  .a-2s-section-main-paragraph {
+    font-size: 2vw;
+    padding: 0 4%;
+    text-align: start;
   }
 }
