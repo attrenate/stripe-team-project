@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    
-}
-html{
-    margin: 0;
-    padding: 0;
-}
+
+
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: #f8f9fc;
     overflow-x: hidden;
     font-family: "Inter", serif;
@@ -159,15 +154,19 @@ body {
     font-size: 14px;
     font-weight: 600;
 }
-
+.tpay-method img{
+    filter: brightness(1) invert(1);
+}
 .tpay-applepay {
     background-color: #000;
     color: #fff;
+    
 }
 
 .tpay-linkpay {
     background-color: #00b894;
     color: #fff;
+    
 }
 
 .tpay-divider {
@@ -288,6 +287,7 @@ body {
 /* Pricing Table */
 
 .tcontainer {
+  
     width: 538px;
     height: 390px;
     display: flex;
@@ -300,12 +300,18 @@ body {
  }
  
  .tplan {
+
+  width: 20%;
     flex: 1;
     padding: 15px;
     border: 1px solid #e0e0e0;
     border-radius: 6px;
     position: relative;
+    transition: transform 0.3s ease;
  }
+ .tplan:hover {
+    transform: scale(1.04);
+  }
  
  .ttitle {
     font-size: 20px;
@@ -357,6 +363,14 @@ body {
     margin: 0;
     font-size: 12px;
  }
+ .tfeatures {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 10px;
+}
  
  .tfeaturesheading {
     font-weight: 600;
@@ -510,7 +524,6 @@ body {
 .t-flow-arrow {
     width: 10px;
     height: 30px;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2v20m0 0l-5-5m5 5l5-5" stroke="%23007bff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>');
     background-repeat: no-repeat;
     background-position: center;
     margin: 5px 0;
@@ -558,8 +571,23 @@ body {
     border: none;
     cursor: pointer;
     margin-top: 30px;
+    transition: 0.5s ease-in-out;
 }
-
+.tpayment-button{
+    transition: 0.5s ease-in-out;
+}
+.trecurring-button{
+    transition: 0.5s ease-in-out;
+}
+.trecurring-button:hover{
+    background-color: black;
+}
+.tissuing-button:hover{
+    background-color: black;
+}
+.tpayment-button:hover{
+    background-color: black;
+}
 .tissuingfooter {
     margin-top: 50px;
 }
@@ -577,9 +605,10 @@ body {
 
 .tBlueBackground{
     overflow: hidden;
-    width: 100%px;
-    height: 1000px;
+    width: 100%;
+    height: 1200px;
     background-color: #112D4E;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
    
 
 }
@@ -627,12 +656,15 @@ body {
 .tGray{
     background: linear-gradient(to bottom right, #112D4E, #0C223A);
     box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     color: #fff;
     font-weight: 500; 
     font-size: 15px;
     padding: 40px;
     font-family: "Source Code Pro", serif !important;
+    background: linear-gradient(to bottom, #020A18, #0C223A);
+    background-size: 200% 200%;
+    animation: backgroundmotionn 5s infinite linear;
 }
 .tgray span{
     text-align: left;
@@ -656,6 +688,10 @@ body {
     font-size: 15px;
     padding: 40px;
     font-family: "Source Code Pro", serif !important;
+    background: linear-gradient(to bottom, #020A18, #0C223A);
+    background-size: 200% 200%;
+    animation: backgroundmotion 2s infinite linear;
+
 }
 
 
@@ -675,7 +711,12 @@ body {
     justify-content: center;
     align-items: start;
     flex-direction: column;
+    transition: transform 0.3s ease;
 }
+  .tbottom-setting:hover {
+    transform: scale(1.03);
+  }
+  
 .tbottom-setting img{
     width: 100px;
     height: 100px;
@@ -700,74 +741,2537 @@ body {
     margin-top: 40px;
 }
 
-
-/* responsive */
-
-/* Default styles for large screens (above 1024px) */
-
-/* 1024px - Adjust if necessary */
-@media (max-width: 1024px) {
-    
+/* keyframes */
+@keyframes backgroundmotionn {
+    0% {
+        background: linear-gradient(to bottom, #020A18, #0C223A);
+        background-position: 0% 100%;
+    }
+    50% {
+        background: linear-gradient(to bottom, #0C223A, #1A3D5F);
+        background-position: 0% 50%;
+    }
+    100% {
+        background: linear-gradient(to bottom, #020A18, #0C223A);
+        background-position: 0% 0%;
+    }
 }
 
-/* 768px - Switch to column layout and divide sizes by 2 */
-@media (max-width: 768px) {
-    .tmodular-solutions{
-        flex-direction: column;
+@keyframes backgroundmotion {
+    0% {
+        background: linear-gradient(to bottom, #020A18, #0C223A);
+        background-position: 0% 0%;
     }
-    .tpayments{
-        flex-direction: column;
+    50% {
+        background: linear-gradient(to bottom, #0C223A, #1A3D5F);
+        background-position: 0% 50%;
     }
-    .trecurring-revenue{
-        flex-direction: column;
+    100% {
+        background: linear-gradient(to bottom, #020A18, #0C223A);
+        background-position: 0% 100%;
     }
-    .tconnect{
-        flex-direction: column;
-    }
-    .tissuing{
-        flex-direction: column;
-    }
-    .tBlueBackground{
-        flex-direction: column;
-    }
+}
 
-    .tleft-connect{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
     }
-    .tleft-issuing{
-        width: 70%;
-        display: flex;
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.ts-rightside,
+.trightpayment,
+.tpay-box,
+.tcontainer,
+.t-container {
+    position: relative; 
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.ts-rightside.slideIn,
+.trightpayment.slideIn,
+.tpay-box.slideIn,
+.tcontainer.slideIn,
+.t-container.slideIn {
+    animation: slideIn 0.6s ease-out forwards;
+}
+
+
+  
+
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .tmodular-solutions {
         flex-direction: column;
+    }
+    .tpayments {
+        flex-direction: column;
+    }
+    .trecurring-revenue {
+        flex-direction: column;
+    }
+    .tconnect {
+        flex-direction: column;
+    }
+    .tissuing {
+        flex-direction: column;
+    }
+    .tBlueBackground {
+        overflow: hidden;
+        width: 100%;
+        height: 1400px;
+        background-color: #112D4E;
+    }
+    /* Section 10 adjustments */
+    .tTopdev {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 120px;
+    }
+    .tdevTopHeader {
+        font-weight: 500;
+        font-size: 15px;
+        color: #00D4FF;
+    }
+    .tLeftDev h1 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 60px;
+    }
+    .tLeftDev p {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 10px;
+        color: #ADBDCC;
+    }
+    .tDevButton {
+        width: 150px;
+        height: 45px;
+        border-radius: 16px;
+        padding: 10px;
+        color: #0A2540;
+    }
+    .tGray {
+        width: 50%;
+        font-size: 10px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tgray span {
+        text-align: left;
+        font-weight: 500;
+        font-size: 10px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tBlue {
+        width: 50%;
+        background: linear-gradient(to bottom right, #020A18, #0C223A);
+        box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
+        border-radius: 0px 0px 10px 10px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10px;
+        padding: 40px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tdevbottom {
+        width: 100%;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        flex-wrap: wrap;
+    }
+    .tbottom-setting {
+        margin-top: 20px;
+        width: 270px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    .tbottom-setting img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 10px;
+    }
+    .tbottom-setting h1 {
+        font-weight: 600;
+        font-size: 10px;
+        color: #fff;
+    }
+    .tbottom-setting p {
+        font-weight: 500;
+        font-size: 10px;
+        color: #ADBDCC;
+        margin-top: 30px;
+    }
+    .tbottom-setting a {
+        text-decoration: none;
+        color: #00D4FF;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 40px;
+    }
+}
+
+/* 390px - Further reduce sizes and enforce column layout */
+@media (max-width: 390px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    .tmodular-solutions {
+        flex-direction: column;
+    }
+    .tpayments {
+        flex-direction: column;
+    }
+    .trecurring-revenue {
+        flex-direction: column;
+    }
+    .tconnect {
+        flex-direction: column;
+    }
+    .tissuing {
+        flex-direction: column;
+    }
+    /* Section 10 adjustments for 390px */
+    .tBlueBackground {
+        display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        margin-right: 0;
+        padding: 0;
+        width: 500px;
+        height: 2400px;
+    }
+    .tTopdev {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tLeftDev {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tdevTopHeader {
+        font-weight: 500;
+        font-size: 15px;
+        color: #00D4FF;
+    }
+    .tLeftDev h1 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 60px;
+    }
+    .tLeftDev p {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 10px;
+        color: #ADBDCC;
+    }
+    .tDevButton {
+        width: 140px;
+        height: 35px;
+        border-radius: 16px;
+        color: #0A2540;
+    }
+    .tGray {
+        margin-top: 30px;
+        width: 100%;
+        font-size: 10px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tgray span {
+        text-align: left;
+        font-weight: 500;
+        font-size: 10px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tBlue {
+        width: 100%;
+        background: linear-gradient(to bottom right, #020A18, #0C223A);
+        box-shadow: 10px 10px 30px rgba(12, 34, 58, 0.7);
+        border-radius: 0px 0px 10px 10px;
+        color: #fff;
+        font-weight: 500;
+        font-size: 10px;
+        padding: 40px;
+        font-family: "Source Code Pro", serif !important;
+    }
+    .tdevbottom {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .tbottom-setting {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tbottom-setting img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+    .tbottom-setting h1 {
+        font-weight: 600;
+        font-size: 10px;
+        color: #fff;
+    }
+    .tbottom-setting p {
+        font-weight: 500;
+        font-size: 10px;
+        color: #ADBDCC;
+        margin-top: 30px;
+    }
+    .tbottom-setting a {
+        text-decoration: none;
+        color: #00D4FF;
+        font-size: 10px;
+        font-weight: 600;
+        margin-top: 40px;
     }
     
+    .tconnect{
+        margin-left: 100px;
+    }
+    .trecurring-revenue{
+        margin-right: 100px;
+    }
+    .tpayments{
+        margin-right: 100px;
+    }
+    .tmodular-solutions{
+        margin-right: 100px;
+    }
+}
+
+/*SECTION READY TO GET STARTED*/
+/* .a-ready-to-get-started{
+    margin-top: 11585.48px
+  } */
+  .a-readytogetstarted-margin-container {
+    margin-top: 600px;
+    margin-left: 200px;
+    padding-right: 240px;
+    padding-left: 210px;
+    width: 1080px;
+    height: 656px;
+    max-width: 1080px;
+    padding-top: 135px;
+    padding-bottom: 287px;
+  }
+  
+  .a-readytogetstarted-position {
+    width: 1080px;
+    height: 241px;
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between sections */
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Add spacing between sections */
+    flex-wrap: wrap; /* Ensures responsiveness */
+  }
+  
+  .a-readytogetstarted-1s,
+  .a-rtgs-2sn3s {
+    flex: 1;
+  }
+  
+  .a-rtgs-2sn3s {
+    display: flex;
+    gap: 20px; /* Optional: Add space between the sections */
+  }
+  
+  .a-rtgs-2s,
+  .a-rtgs-3s {
+    flex: 1; /* Makes both sections take equal width */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .a-readytogetstarted-1s {
+    width: 540px;
+    height: 241px;
+  }
+  
+  .a-rtgs-2s {
+    width: 270px;
+    height: 177px;
+  }
+  
+  .a-rtgs-3s {
+    width: 270px;
+    height: 177px;
+    
+  }
+  
+  .a-rtgs-h1 {
+    width: 412px;
+    height: 32px;
+    font-family: Inter;
+    font-weight: 500px;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: rgba(10, 37, 64, 1);
+  }
+  
+  .a-rtgs-paragraph {
+    width: 412px;
+    height: 112px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: rgba(66, 84, 102, 1);
+    margin-top: 30px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgba(99, 91, 255, 1);
+  }
+  
+  .a-rtgs-footer-1s {
+    display: flex;
+    justify-content: space-between; /* Optional: space between elements */
+    align-items: center; /* Optional: vertically align the content */
+    margin-top: 20px;
+  }
+  
+  .a-rtgs-footer-1s-container {
+    display: flex;
+    gap: 15px; /* Optional: Add space between items inside the container */
+  }
+  .a-rtgs-1s-button {
+    width: 115px;
+    height: 35px;
+    background-color: #635bff; /* Change color as needed */
+    border: none;
+    color: white;
+    border-radius: 30px;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+  }
+  
+  .a-rtgs-footer-p {
+    font-size: 14px;
+    color: #635bff; /* Adjust color */
+    font-family: Inter;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  
+  .a-rtgs-paragraph-3s,
+  .a-rtgs-paragraph-2s {
+    width: 220px;
+    height: 48px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #425466;
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+  
+  .a-rtgs-footer-p-2s,
+  .a-rtgs-footer-p-3s {
+    font-size: 14px;
+    color: #635bff; /* Adjust color */
+    font-family: Inter;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+  
+  .a-rtgs-2sh4,
+  .a-rtgs-3sh4 {
+    width: 200px;
+    height: 24px;
+    font-family: Inter;
+    font-size: 14.06px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #0a2540;
+  }
+  
+  .a-rtgs-3s-vertical-h4,
+  .a-rtgs-2s-vertical-h4 {
+    display: flex; /* Aligns the child elements side by side */
+    align-items: center; /* Vertically aligns the content */
+    gap: 10px; /* Optional: Add some space between the two elements */
+  }
+  
+  .a-rtgs-3s-vertical,
+  .a-rtgs-2s-vertical {
+    width: 1px; /* Adjust width of the vertical divider */
+    height: 15px; /* Adjust height as needed */
+    background-color: #635bff; /* Set the color of the vertical divider */
+  }
+  
+  .a-rtgs-3sh4,
+  .a-rtgs-2sh4 {
+    display: flex;
+    align-items: center; /* Center the h4 vertically within the div */
+  }
+  
+  .a-readytogetstarted-background {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240, 248, 255);
+    clip-path: polygon(0 0, 100% 0%, 100% 67%, 0 87%);
+    z-index: 1;
+  }
+  
+  .a-readytogetstarted-main-visual-container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .a-rtgs-background-bottoms {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distribute space evenly between the two child divs */
+    width: 100%; /* Full width of the viewport */
+    position: absolute;
+    top: 0;
+  }
+  .a-rtgs-bottom12,
+  .a-rtgs-bottom34 {
+    display: flex; /* Make both divs use flexbox */
+  }
+  
+  .a-rtgs-bottom34 {
+    /* This will be aligned to the right */
+    justify-content: flex-end; /* Align items to the right */
+  }
+  
+  .a-rtgs-bottom1,
+  .a-rtgs-bottom2,
+  .a-rtgs-bottom3,
+  .a-rtgs-bottom4 {
+    position: absolute; /* Instead of absolute */
+    z-index: 100; /* Keep the z-index high to ensure visibility */
+  }
+  
+  .a-rtgs-bottom1 {
+    margin-top: 375px;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(122, 115, 255, 0.5);
+    clip-path: polygon(0 27%, 100% 21%, 100% 31%, 0 37%);
+  }
+  
+  .a-rtgs-bottom2 {
+    margin-left: 50px;
+    margin-top: 345px;
+    width: 200px;
+    height: 400px;
+    background-color: rgba(128, 233, 255, 0.5);
+    clip-path: polygon(0 27%, 100% 23%, 100% 33%, 0 37%);
+  }
+  
+  .a-rtgs-bottom3 {
+    margin-top: 240px; /* Adjust for desired vertical positioning */
+    width: 300px;
+    height: 400px;
+    background-color: rgba(128, 233, 255, 0.5);
+    clip-path: polygon(0 39%, 100% 31%, 100% 41%, 0 49%);
+  }
+  
+  .a-rtgs-bottom4 {
+    margin-top: 265px; /* Adjust for desired vertical positioning */
+    width: 200px;
+    height: 400px;
+    background-color: rgba(122, 115, 255, 0.5);
+    clip-path: polygon(0 38%, 100% 32%, 100% 41%, 0 47%);
+    margin-right: 50px;
+  }
+  
+  /*SECTION GLOBALS SCALE 4*/
+  .aGlobalScale {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1300px;
+      background-color: #0A2540;
+      clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+      background-image: url(image.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+    
+    .aGlobal-Scale-Main-Info {
+      width: 90%; /* Use 90% for better flexibility */
+      max-width: 1080px; /* To limit the width on very large screens */
+      height: auto; /* Allow height to grow */
+      position: relative;
+      z-index: 2;
+      margin-left: auto;
+      margin-right: auto;
+      
+    }
+    
+    
+    .a-global-scale-main-heading {
+      margin-top: 2%;
+      width: 60%; /* Use percentage width */
+      height: auto; /* Allow height to adjust */
+      margin-bottom: 20px;
+      color: white;
+      font-size: 1vw; /* Make font size responsive */
+    }
+    
+    .a-main-info-two-sections {
+      margin-right: 300px;
+      margin-top: 300px;
+      width: 900px; /* Full width for responsiveness */
+    
+    }
+    
+    .a-main-info-first-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      
+    }
+    
+    .a-heading-one {
+      width: 100%; /* Use full width */
+      padding: 0px 4%; /* Adjust padding to be relative */
+      gap: 2%;
+      margin-top: 5%;
+    }
+    .a-main-heading{
+      width: 50%; /* Reduced width for a smaller container */
+      height: auto;
+      padding: 0px 5% 0px 0px; /* Adjusted padding to make it more compact */
+      gap: 2%;
+      margin-top: 2%; /* Adjust top margin to maintain spacing */
+    }
+    
+    .a-main-pharagraph {
+      /* width: 50%; Set a relative width for responsiveness */
+      height: auto;
+      /* padding: 0px 4%; */
+      color: #ADBDCC;
+      line-height: 1.5;
+      word-wrap: break-word;
+      white-space: normal;
+   
+    }
+    
+    .a-main-p{
+      /* margin-right: 10%; */
+    }
+    
+    .a-main-info-second-section {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      z-index: 3;
+      margin-top: 2%;
+    }
+    
+    .a-2s-section {
+      width: 30%; /* Set width to percentage for responsiveness */
+      height: auto;
+      margin-left: 2%;
+      margin-top: 5%;
+    }
+    
+    .a-2s-section-header {
+      width: 100%; /* Full width for better layout */
+      height: auto;
+    }
+    
+    .a-2s-1s-paragraph {
+      width: 100%; /* Use full width */
+      height: auto;
+    }
+    
+    .a-2s-section-vertical {
+      width: 1px;
+      height: 1em;
+      background: #00d4ff;
+    }
+    
+    .a-2s-section-header-paragraph {
+      width: 90%; /* Adjust width for responsiveness */
+      margin-left: 5%;
+      color: white;
+    }
+    
+    a {
+      text-decoration: none;
+      color: #00d4ff;
+    }
+    
+    .a-2s-section-p {
+      width: 80%; /* Set width relative to its parent */
+      font-family: Inter;
+      font-size: 1.5vw; /* Make font size responsive */
+      line-height: 1.5;
+      text-align: left;
+      margin-top: -10%;
+    }
+    
+    .a-2s-section-main-paragraph {
+      width: 90%; /* Use relative width */
+      padding: 0px 2%;
+      color: #ADBDCC;
+      margin-left: 5%;
+      font-size: 1.5vw;
+      
+      
+    }
+    
+    .a-2s-main-p {
+      width: 90%;
+      font-family: Inter;
+      font-size: 1vw; /* Adjust font size for smaller devices */
+      line-height: 1.8em;
+      text-align: left;
+    }
+    
+    .a-global-scale {
+      color: #00D4FF;
+      margin-top: 15%;
+    }
+    
+    /* Responsive adjustments */
+    
+    /* Large Screen (1920px and above) */
+    @media (min-width: 1920px) {
+      .aGlobal-Scale-Main-Info {
+        width: 80%; /* Slightly smaller width */
+        max-width: 1080px;
+      }
+    
+      .a-global-scale-main-heading {
+        width: 50%; /* Smaller heading */
+        font-size: 1vw; /* Font size adjusted */
+      }
+    
+      .a-main-info-two-sections {
+        gap: 4%; /* Reduce gap for better spacing */
+      }
+    
+      .a-main-info-first-section {
+        margin-left: -5%; /* Adjust left margin */
+      }
+    
+      .a-main-pharagraph {
+        width: 40%; /* Set relative width for large screens */
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    
+      .a-2s-section {
+        width: 25%;
+      }
+    
+      .a-2s-section-p {
+        font-size: 1.3vw; /* Slightly larger font size */
+      }
+    }
+    
+    /* Medium-Large Screen (1440px) */
+    @media (min-width: 1440px) {
+      .aGlobal-Scale-Main-Info {
+        width: 85%;
+      }
+    
+      .a-global-scale-main-heading {
+        width: 55%; /* Slightly larger heading */
+        font-size: 1.2vw;
+      }
+    
+      .a-main-info-two-sections {
+        gap: 5%;
+      }
+    
+      .a-main-info-first-section {
+        margin-left: -3%;
+      }
+    
+      .a-main-pharagraph {
+        width: 45%;
+      }
+    
+      .a-2s-section {
+        width: 28%;
+      }
+    
+      .a-2s-section-p {
+        font-size: 1.4vw;
+      }
+    }
+    
+    /* Medium Screen (1024px) */
+    @media (max-width: 1024px) {
+      .aGlobal-Scale-Main-Info {
+        width: 90%; /* Adjust for mid-sized screens */
+        padding: 0 5%;
+        margin-top: 10%;
+      }
+    
+      .a-global-scale-main-heading {
+        width: 100%; /* Full width for heading */
+        font-size: 2vw; /* Adjust font size for better readability */
+        text-align: start; /* Center the heading for smaller screens */
+      }
+    
+      .a-main-info-two-sections {
+        display: flex;
+        flex-direction: column; /* Stack sections vertically */
+        gap: 5%; /* Adjust gap for readability */
+      }
+    
+      .a-main-info-first-section,
+      .a-main-info-second-section {
+        width: 100%; /* Full width for both sections */
+        margin-left: 0; /* Remove margin */
+      }
+    
+      .a-heading-one {
+        width: 100%; /* Full width for heading */
+        padding: 0 4%;
+        margin-top: 5%;
+        text-align: start; /* Center the heading */
+      }
+    
+      .a-main-pharagraph {
+        width: 100%; /* Full width for paragraph */
+        font-size: 1.2vw; /* Adjust font size */
+        text-align: start; /* Center the paragraph */
+      }
+    
+      .a-2s-section {
+        width: 100%; /* Full width for section */
+        margin-top: 5%;
+      }
+    
+      .a-2s-section-p {
+        font-size: 1.5vw;
+        text-align: start;
+        margin-top: -13%;
+        
+      }
+    
+      .a-2s-section-main-paragraph {
+        font-size: 1.5vw;
+        margin-left: 1%;
+        text-align: start;
+      }
+    }
+    
+    /* Small-Medium Screen (768px) */
+    @media (max-width: 768px) {
+      .aGlobal-Scale-Main-Info {
+        width: 100%;
+        padding: 0 5%;
+      }
+    
+      .a-global-scale-main-heading {
+        width: 100%; /* Full width for heading */
+        font-size: 2vw; /* Increase font size */
+        text-align: start; /* Center the heading */
+      }
+    
+      .a-main-info-two-sections {
+        display: flex;
+        flex-direction: column; /* Stack sections vertically */
+        gap: 10%; /* Increase gap between sections for better readability */
+      }
+    
+      .a-main-info-first-section,
+      .a-main-info-second-section {
+        width: 100%; /* Full width for both sections */
+        margin-left: 0;
+      }
+    
+      .a-heading-one {
+        width: 100%; /* Full width */
+        padding: 0 4%;
+        margin-top: 5%;
+        text-align: start; /* Center the heading */
+        font-size: 1.5vw;
+      }
+    
+      .a-main-pharagraph {
+        width: 100%; /* Full width for paragraph */
+        font-size: 1rem; /* Adjust font size */
+        text-align: start; /* Center the paragraph */
+      }
+    
+      .a-2s-section {
+        width: 100%; /* Full width for section */
+        margin-left: 0;
+        margin-bottom: 10%; /* Add margin for spacing */
+    
+        
+       
+      }
+    
+      .a-2s-section-p {
+        font-size: 2.5vw;
+        text-align: start;
+        margin-top: -13%;
+      
+      }
+      .a-2s-section-vertical {
+        height: 0.5em;
+    
+      }
+    
+    
+      .a-2s-section-main-paragraph {
+        font-size: 2vw;
+        padding: 0 4%;
+        text-align: center;
+      }
+    }
+    
+    /* Extra Small Screen (390px) */
+    @media (max-width: 390px) {
+      .aGlobal-Scale-Main-Info {
+        width: 100%;
+        padding: 0 2%;
+      }
+    
+      .a-global-scale-main-heading {
+        width: 100%; /* Full width for heading */
+        font-size: 2vw; /* Larger font size for small screens */
+        text-align: start; /* Center the heading */
+      }
+    
+      .a-main-info-two-sections {
+        display: flex;
+        flex-direction: column; /* Stack sections vertically */
+        gap: 15%; /* Increase gap between sections */
+      }
+    
+      .a-main-info-first-section,
+      .a-main-info-second-section {
+        width: 100%; /* Full width for both sections */
+        margin-left: 0;
+      }
+    
+      .a-heading-one {
+        width: 100%; /* Full width */
+        padding: 0 4%;
+        margin-top: 5%;
+        text-align: start; /* Center the heading */
+      }
+    
+      .a-main-pharagraph {
+        width: 100%; /* Full width for paragraph */
+        font-size: 0.6rem; /* Adjust font size */
+        text-align: start; /* Center the paragraph */
+      }
+    
+      .a-2s-section {
+        width: 100%; /* Full width for section */
+        margin-left: 0;
+        margin-bottom: 10%; /* Add margin for spacing */
+      }
+    
+      .a-2s-section-p {
+        font-size: 3vw;
+        text-align: start;
+      }
+    
+      .a-2s-section-main-paragraph {
+        font-size: 2vw;
+        padding: 0 4%;
+        text-align: start;
+      }
+    }
+  
+    /*SECTION 8 REINVENTION*/
+    /* .a-main-body-of-enterprise-reinvention{
+      margin-top: 6249.48px;
+    } */
+    
+  .a-center-info-container2{
+  
+    margin-top: 400px;
+      width: 1080px;
+      height: 907px;
+      gap: 64px;
+      margin-left: 350px;
+  
+  }
+  
+  .a-reinvention-1section-container{
+      margin-left: 30px;
+  }
+  
+  .a-h3-reinvention{
+      width: 762px;
+      height: 28px;
+      font-size: 16.45px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color: rgba(99, 91, 255, 1);
+      margin-bottom: 20px;
+  
+  }
+  
+  .a-h1-reinvention{
+      width: 762px;
+      height: 48px;
+      font-weight: 500px;
+      font-size: 34.73px;
+      line-height: 48px;
+      letter-spacing: -0.2px;
+      color: rgba(10, 37, 64, 1);
+  
+  }
+  
+  .a-reinvention{
+      width: 810px;
+      height: 100px;
+      max-width: 810px;
+      gap: 24px;
+      padding-right: 32px;
+      padding-left: 16px;
+      
+  
+  }
+  
+  .a-reinvention-main-paragraph{
+      width: 810px;
+      height: 112px;
+      max-width: 810px;
+      top: 124px;
+      padding-right: 32px;
+      padding-left: 16px;
+      margin-top: 30px;
+      margin-bottom: 5px;
+  }
+  
+  .a-reinvention-p{
+      width: 720px;
+      height: 84px;
+      top: -0.5px;
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 16.45px;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      color:rgba(66, 84, 102, 1);
+  }
+  
+  a{
+      text-decoration: none;
+      color:rgba(99, 91, 255, 1);
+  
+  }
+  #N-section{
+    margin-left: 400px;
+  }
+  .n-section11a{
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .a-button{
+      width: 139px;
+      height: 33px;
+      border-radius: 16.5px;
+      background-color:rgba(99, 91, 255, 1);
+      text-decoration: none;
+      border-color: rgba(99, 91, 255, 1);
+      color: rgba(255, 255, 255, 1);
+      font-weight: 500px;
+      font-size: 13.95px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      font-family: 'Inter', sans-serif;
+  }
+  
+  .a-reinvention-button{
+      padding-right: 32px;
+      padding-left: 16px;
+  }
+  
+  
+  .a-reinvention-2section{
+      width: 1080px;
+      height: 550px;
+      gap: 40px;
+      margin-top: 70px;
+      padding-right: 32px;
+      padding-left: 16px;
+  }
+  
+  .a-reinvention-2s-1s-aside{
+      margin-bottom: auto;
+  }
+  
+  .a-reinvention-aside-1s{
+      width: 238px;
+      height: 248px;
+      gap: 48px;
+  }
+  
+  .a-aside-1s{
+  
+  margin-bottom: 60px;
+  
+  }
+  
+  
+  
+  .a-aside-1s-5-header{
+      width: 110px;
+      height: 32px;
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 31.92px;
+      letter-spacing: 0.2px;
+      color:  rgba(10, 37, 64, 1);
+      padding-right: 20px;
+      padding-left: 16px;
+      margin-top: -27.5px;
+  }
+  
+  .a-aside-1s-5-main{
+      width: 238px;
+      height: 32px;
+      max-width: 810px;
+      padding-right: 112px;
+      padding-left: 16px;
+  
+  }
+  
+  .a-aside-1s-5-paragraph{
+      width: 238;
+      height: 72;
+      max-width: 810px;
+      padding-right: 20px;
+      padding-left: 16px;
+      
+  }
+  
+  .a-aside-1s-5{
+      width: 230px;
+      height: 72px;
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 13.83px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color:rgba(66, 84, 102, 1);
+      padding-right: 20px;
+      padding-left: 16px;
+  }
+  
+  .a-aside-1s-5header-vertical{
+      width: 1px;
+      height: 24px;
+      background:rgba(99, 91, 255, 1);
+   
+  }
+  
+  ul {
+      list-style: none; /* Removes bullets */    
+  }
+  
+  
+  .a-aside-3s-products-used1{
+      width: 238px;
+      height: 32px;
+      max-width: 810px;
+      padding-right: 112px;
+      padding-left: 16px;
+  }
+  
+  .a-aside-3s-products-used-vertical{
+      width: 1px;
+      height: 15px;
+      background:rgba(99, 91, 255, 1);
+    }
+  
+    .a-aside-3s-products-used-header{
+      width: 150px;
+      height: 24px;
+      font-family: Inter;
+      font-weight: 500px;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color:  rgba(10, 37, 64, 1);
+      padding-right: 20px;
+      padding-left: 16px;
+      margin-top: -21px;
+  }
+  
+  .a-aside-products-used{
+      margin-top: 30px;
+  }
+  
+  .a-aside-3s-products-used-list{
+      width: 238px;
+      height: 32px;
+      max-width: 810px;
+      padding-left: 32px;
+      font-family: Inter;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18.15px;
+      letter-spacing: 0.2px;
+      color:  rgba(66, 84, 102, 1);
+  }
+  
+  .a-payments{
+      margin-top: 5px;
+      margin-bottom: 7px;
+  }
+  
+  li {
+      list-style: none;
+      display: flex;
+      align-items: center;
+  }
+  
+  .a-payments::before {
+      content: "";
+      background-image: url('payments.jpg'); /* Replace with the correct image path */
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 24px; /* Adjust width */
+      height: 24px; /* Adjust height */
+      display: inline-block;
+      margin-right: 8px; /* Space between icon and text */
+  }
+  
+  .a-connect::before {
+      content: "";
+      background-image: url('connection.jpg'); /* Replace with the correct image path */
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 24px; /* Adjust width */
+      height: 24px; /* Adjust height */
+      display: inline-block;
+      margin-right: 8px; /* Space between icon and text */
+  }
+  
+  .a-reinvention-2s-1s {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two equal columns */
+      align-items: center; /* Aligns items vertically */
+      gap: 20px; /* Adjust spacing */
+  }
+  
+  .a-card{
+      border-radius: 15px; /* Rounded corners */
+      display: block;
+      overflow: hidden;
+      width: 730px;
+      height: 390px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Adds a soft shadow */
+  
+  }
+  
+  .a-reinvention-img{
+      display: grid;
+      & > * {
+          grid-column:1;
+          grid-row:1;
+      }
+  }
+  
+  .a-reinvention-img-iconflex{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .a-groupjpg{
+      width: 93px;
+      height: 28px;
+      margin-top: 10px;
+      margin-left: 20px;
+  }
+  
+  .a-framejpg{
+      width: 20px;
+      height: 18px;
+      margin-top: 10px;
+      margin-right: 20px;
+  }
+  
+  .a-reinvention-img-p{
+      width: 390px;
+      height: 72px;
+      font-family: Inter;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  color:  rgba(255, 255, 255, 1);
+  margin-left: 20px;
+  margin-top: 300px;
+  
+  }
+  
+  .a-reinvention-logo-section-verticals {
+      display: flex; /* Aligns divs in a row */
+      width: 100%; /* Ensures it spans full width */
+      height: 1px; /* Thin line */
+      background: transparent; /* No background */
+      overflow: hidden;
+      margin-top: 50px;
+  }
+  
+  .a-reinvention-logo-vertical-divider1 {
+      background-color: rgba(0, 102, 177, 1);
+      width: 25%;
+      height: 100%;
+  }
+  
+  .a-reinvention-logo-vertical-divider2 {
+      background-color: rgba(239, 168, 46, 1);
+      width: 25%;
+      height: 100%;
+  }
+  
+  .a-reinvention-logo-vertical-divider3 {
+      background-color: rgba(66, 176, 213, 1);
+      width: 25%;
+      height: 100%;
+  }
+  
+  .a-reinvention-logo-vertical-divider4 {
+      background-color:rgba(197, 70, 71, 1);
+      width: 25%;
+      height: 100%;
+  }
+  
+  .a-reinvention-logo-img{
+      display: flex; /* Aligns divs in a row */
+      width: 100%; /* Ensures it spans full width */
+      height: 100%; /* Thin line */
+      justify-content: space-around;
+      margin-top: 30px;
+  }
+  
+  
+   /*<!--SECTION 9-->*/
+  .a-stripe-bg-1png {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .a-bfg-section2 {
+    width: 90%;
+    height: auto;
+    padding-top: 3%;
+    margin-top: 100px;
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+  }
+  
+  .a-bfg-section2-section1 {
+    padding-top: 12em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45%;
+  }
+  
+  .a-bfg-section2-section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 45%;
+  }
+  
+  .a-main-p-bfg {
+    width: 80%;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: rgba(66, 84, 102, 1);
+    text-align: start;
+  }
+  
+  .a-bfg-main-heading {
+    width: 80%;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: rgba(10, 37, 64, 1);
+    margin-bottom: 2%;
+    font-weight: bold;
+    text-align: start;
+  }
+  
+  .a-bfg {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: rgba(99, 91, 255, 1);
+    margin-bottom: 2%;
+    text-align: start;
+  }
+  
+  .a-builtforgrowth-1s {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 50px;
+    margin-left: 500px;
+    padding-top: 3%;
+    text-align: start;
+  }
+  
+  /* .a-builtforgrowth-background {
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(10, 37, 64, 1);
+    clip-path: polygon(0 80%, 100% 61%, 100% 100%, 0 100%);
+    position: relative;
+    z-index: -1;
+    margin-top: 10vh;
+    transition: clip-path 0.3s ease-in-out;
+  } */
+  
+  /* Responsive Design */
+  
+  @media (max-width: 1024px) {
+    .a-bfg-section2 {
+      flex-direction: column;
+      align-items: center;
+      gap: 5%;
+    }
+  
+    .a-bfg-section2-section1,
+    .a-bfg-section2-section2 {
+      width: 90%;
+      align-items: flex-start;
+      padding-top: 8em;
+    }
+  
+    .a-stripe-bg-1png  {
+      max-width: 90%;
+    }
+  
+    .a-bfg-main-heading {
+      font-size: 1.8rem;
+      text-align: start;
+    }
+  
+    .a-builtforgrowth-1s {
+      margin: 0 auto 0 10%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .a-bfg-section2-section1 {
+      padding-top: 6em;
+    }
+  
+    .a-bfg-main-heading {
+      font-size: 1.5rem;
+    }
+  
+    .a-main-p-bfg {
+      font-size: 0.9rem;
+    }
+  
+    .a-stripe-bg-1png  {
+      max-width: 100%;
+    }
+  
+    .a-builtforgrowth-background {
+      height: 25vh;
+      clip-path: polygon(0 85%, 100% 65%, 100% 100%, 0 100%);
+    }
+  
+    .a-builtforgrowth-1s {
+      margin: 0 auto 0 10%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .a-bfg-section2-section1 {
+      padding-top: 4em;
+    }
+  
+    .a-bfg-main-heading {
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+  
+    .a-main-p-bfg {
+      font-size: 0.85rem;
+      line-height: 1.4rem;
+    }
+  
+    .a-builtforgrowth-background {
+      height: 20vh;
+      clip-path: polygon(0 90%, 100% 70%, 100% 100%, 0 100%);
+    }
+  
+    .a-builtforgrowth-1s {
+      margin-left: 1%;
+    }
+  }
+  
+  
+  .N-paralelogrami {
+    width: 100%;
+    height: 100vh; 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    background: linear-gradient(45deg, purple, orange, rgb(126, 196, 214));
+    clip-path: polygon(0 0, 100% 0, 100% 24%, 0 70%);
+    background-size: 200% 200%;
+    animation: moveGradient 5s linear infinite;;
+}
+
+
+
+.N-list {
+    position: relative;
+    text-align: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    gap: 10px;
+    padding: 0 20px;
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.N-nav-item1 {
+    font-size: 150%;
+    color: black;
+}
+
+.N-nav-item {
+    color: white;
+    font-size: large;
+}
+
+.N-header-button {
+    display: inline-block;
+}
+
+.N-header-buttons {
+    border: none;
+    border-radius: 19px;
+    padding: 10px 14px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, opacity 0.3s ease; 
+}
+.N-header-buttons1{
+    border: none;
+    border-radius: 5px;
+    padding: 0 20px;
+    background-color: inherit; 
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, opacity 0.3s ease; 
+
+}
+
+.N-header-buttons:hover {
+    transform: scale(1.02);
+    color: rgba(255, 255, 255, 0);  
+    opacity: 0.5;     
+}
+.N-header-buttons1:hover {
+    transform: scale(1.02);
+    color: rgba(255, 255, 255, 0);  
+    opacity: 0.5;     
+}
+
+ 
+
+.N-button {
+   position: relative;
+   margin-left: 150px; 
+   margin-top: 50px;
+   padding: 5px 10px;
+   border-radius: 20px;
+   background-color: gainsboro;
+   text-align: center;
+   color: white;
+   border-color: gainsboro;
+}
+
+
+
+
+
+.N-button {
+   position: relative;
+   margin-left: 150px; 
+   margin-top: 50px;
+   padding: 5px 10px;
+   border-radius: 20px;
+   background-color: gainsboro;
+   text-align: center;
+   color: white;
+   border-color: gainsboro;
+}
+
+.N-title {
+   position: relative;
+   font-size: 4rem;
+   margin-left: 10%;
+   margin-top: 20px; 
+}
+#text {
+   position: relative; 
+   margin-left: 10%;
+    margin-top: 3%;
+    font-size: 1.1rem;
+}
+
+
+
+
+
+.N-search-container {
+   position: relative;
+   display: inline-block;
+   margin-left: 10%;
+   margin-top: 2%;
+}
+
+#N-search {
+   border-radius: 15px;
+   width: 300px;
+   height: 40px;
+   padding-left: 10px; 
+   padding-right: 80px;
+   font-size: 16px;
+   border: 1px solid darkslategray; 
+   opacity: 0.3;
+}
+
+.N-search-button {
+   position: absolute; 
+   right: 15px; 
+   top: 50%; 
+   transform: translateY(-50%); 
+   height: 35px;
+   background-color: #00b5e2; 
+   color: white; 
+   border: none; 
+   border-radius: 15px; 
+   padding: 5px 15px; 
+   font-size: 14px; 
+   cursor: pointer; 
+   font-weight: bold; 
+   
+}
+
+.N-search-button:hover {
+   background-color: #009bb5; /
+}
+
+#N-search::placeholder {
+   color: #aaa; 
+}
+
+
+.N-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-template-rows: repeat(2, 1fr);    
+    gap: 15px;
+    max-width: fit-content;
+    margin: 20px auto;
+    transform: scale(0.9);
+    margin-top: 200px;
+}
+
+.N-container{
+    width: 800px;
+    margin-left: 400px;
+    
+
+
+}
+.N-icon {
+    width: 50%;
+    height: auto;
+}
+
+
+
+.N-button:hover {
+    transform: scale(1.01);
+}
+.N-phone-background-fade{
+   position: absolute;
+   background-color: gainsboro;
+   width: 400px;
+   height: 500px;
+   margin-top: 2rem;
+   margin-left: 70rem;
+   opacity: 0.7;
+   border-radius: 10px;
+   z-index: 1;
+}
+.N-phone{
+   position: absolute;
+   width: 250px;
+   height: 500px;
+   
+   background-color: whitesmoke;
+  
+   border-radius: 10px;
+   margin-left: 62rem;
+   z-index: 2;
+   margin-top: 5rem;
+}
+.N-screen {
+   position: absolute; 
+   width: 230px;
+   height: 460px; 
+   background-color: #eaeaea; 
+   border-radius: 16px;
+   top: 20px; 
+   left: 10px; 
+   z-index: 3;
+
+}
+.N-rocket{
+   position: absolute;
+   color: black;
+   font-family: 'Inter', sans-serif;
+   margin-left: 63rem;
+   z-index: 3;
+   
+}
+#rocket-search{
+   border-radius: 4px;
+}
+.N-rec1{
+   position: absolute;
+   background-color: rgb(128, 0, 255);
+   width: 60px;
+   height: 70px;
+   border-radius: 4px;
+   z-index: 4;
+   margin-left: 85px;
+   margin-top: 25px;
+}
+.N-text-rec1{
+   position: absolute;
+   color: white;
+   z-index: 3;
+   font-size: xx-small;
+   margin-top: 30px;
+   margin-left: 5px;
+}
+.N-rec2{
+   position: absolute;
+   z-index: 6;
+   background-color: wheat;
+   border-radius: 4px;
+   width: 60px;
+   height: 70px;
+   margin-left: 100px;
+   margin-top: 40px;
+}
+.N-text-rec2{
+   position: absolute;
+   z-index: 8;
+   color: white;
+   font-size: xx-small;
+
+}
+.abstract{
+   position: absolute;
+   z-index: 4;
+   font-family: 'Inter', sans-serif;
+   font-size: 10px;
+   color: black;
+   margin-top: 120px;
+   margin-left: 70px;
+   
+}
+.pay-rec{
+   position: absolute;
+   width: 200px;
+   height: 20px;
+   background-color: darkblue;
+   z-index: 6;
+   margin-left: 15px;
+   border-radius: 5px;
+   margin-top: 160px;
+}
+.pay{
+   position: absolute;
+   z-index: 7;
+   font-family: 'Inter', sans-serif;
+   font-size: x-small;
+   color: white;
+   margin-left: 85px;
+   margin-top: 5px;
+}
+.email{
+   position: absolute;
+   z-index: 4;
+   font-size: x-small;
+   color: black;
+   font-family: 'Inter', sans-serif;
+   margin-top: 220px;
+   margin-left: 5px;
+}
+.email-box{
+   position: absolute;
+   z-index: 4;
+   border-color: wheat;
+   background-color: #eaeaea;
+   width: 200px;
+   height: 10px;
+   margin-top: 235px;
+   margin-left: 15px;
+}
+.card{
+   position: absolute;
+   z-index: 4;
+   color: black;
+   font-size: x-small;
+   font-family: 'Inter', sans-serif;
+   margin-left: 80px;
+   margin-top: 200px;
+}
+.card-info{
+   position: absolute;
+   z-index: 4;
+   color: black;
+   font-size: small;
+   font-family: 'Inter', sans-serif;
+   margin-left: 5px;
+   margin-top: 250px;
+}
+.Number{
+   position: absolute;
+   z-index: 4;
+   color: black;
+   font-size: x-small;
+   font-family: 'Inter', sans-serif;
+   margin-left: 5px;
+   margin-top: 265px;
+   word-spacing: 100px;
+
+}
+.MM{
+   position: absolute;
+   z-index: 4;
+   color: black;
+   font-size: x-small;
+   font-family: 'Inter', sans-serif;
+   margin-left: 5px;
+   margin-top: 280px;
+   word-spacing: 100px;
    
 
 }
-
-/* 390px - Further reduce sizes */
-@media (max-width: 390px) {
-    .tmodular-solutions{
-        flex-direction: column;
-    }
-    .tpayments{
-        flex-direction: column;
-    }
-    .trecurring-revenue{
-        flex-direction: column;
-    }
-    .tconnect{
-        flex-direction: column;
-    }
-    .tissuing{
-        flex-direction: column;
-    }
-    .tBlueBackground{
-        flex-direction: column;
-    }
+.country{
+   position: absolute;
+   z-index: 4;
+   color: black;
+   font-size: small;
+   font-family: 'Inter', sans-serif;
+   margin-left: 5px;
+   margin-top: 310px;
+   
 }
+.U{
+   position: absolute;
+   z-index: 4;
+   color: black;
+   font-size: small;
+   font-family: 'Inter', sans-serif;
+   margin-left: 5px;
+   margin-top: 330px;
+
+
+}
+.zip{
+   position: absolute;
+   z-index: 4;
+   color: black;
+   font-size: small;
+   font-family: 'Inter', sans-serif;
+   margin-left: 5px;
+   margin-top: 350px;
+
+}
+.pay-reck1{
+   position: absolute;
+   width: 200px;
+   height: 20px;
+   background-color: darkblue;
+   z-index: 6;
+   margin-left: 15px;
+   border-radius: 5px;
+   margin-top: 390px;
+}
+.pay-reck1-text{
+   position: absolute;
+   z-index: 7;
+   font-family: 'Inter', sans-serif;
+   font-size: x-small;
+   color: white;
+   margin-left: 85px;
+   margin-top: 390px;
+
+}
+.stat-rec{
+   position: absolute;
+   z-index: 4;
+   width: 300px;
+   height: 400px;
+   background-color: white;
+   margin-left: 78em;
+   border-radius: 10px;
+   margin-top: 7rem;
+   
+}
+.N-today{
+   position: absolute;
+   z-index: 5;
+   font-family: 'Inter', sans-serif;
+   font-size: large;
+   color: black;
+   margin-top: 1rem;
+   margin-left: 10px;
+
+
+}
+.N-rec{
+   position: absolute;
+   z-index: 5;
+   width: 250px;
+   height: 2px;
+   background-color: black;
+   margin-top: 3rem;
+   margin-left: 10px;
+   border-radius: 1px;
+
+}
+.volume{
+   position: absolute;
+   z-index: 5;
+   font-family: 'Inter', sans-serif;
+   font-size: small;
+   color: black;
+   margin-top: 3.5rem;
+   margin-left: 10px;
+
+}
+.yesterday{
+   position: absolute;
+   z-index: 5;
+   font-family: 'Inter', sans-serif;
+   font-size: x-small;
+   color: black;
+   margin-left: 12rem;
+   margin-top: 3.5rem;
+}
+.numbers{
+   position: absolute;
+   z-index: 5;
+   font-family: 'Inter', sans-serif;
+   font-size: small;
+   color: black;
+   margin-top: 4.5rem;
+   margin-left: 10px; 
+}
+.small-num{
+   position: absolute;
+   z-index: 5;
+   font-family: 'Inter', sans-serif;
+   font-size: x-small;
+   color: black;
+   margin-top: 4.5rem;
+   margin-left: 12rem;
+}   
+.stat-img{
+   position: absolute;
+   z-index: 5;
+   width: 200px;
+   height: 150px;
+   margin-top: 15rem;
+   margin-left: 10rem;
+}
+.stat1-img{
+   position: absolute;
+   z-index: 5;
+   width: 200px;
+   height: 150px;
+   margin-top: 6rem;
+   
+} 
+   
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+   /* Adjusts the grid layout to 5 columns instead of the default layout for the 'ul' element */
+   .ul {
+       grid-template-columns: repeat(5, 1fr); 
+   }
+
+   /* Reduces the font size and adjusts the left margin for the title */
+   .N-title {
+       font-size: 2.5rem; 
+       margin-left: 5%;  
+   }
+
+   /* Adjusts the font size and margin for the text block */
+   #text {
+       font-size: 1rem; 
+       margin-left: 5%;
+   }
+
+   /* Resizes the search input field */
+   #N-search {
+       width: 250px;
+   }
+}
+
+/* For screens smaller than 768px (Mobile/Tablets) */
+@media (max-width: 768px) {
+   /* Adjusts the grid layout to 5 equal columns in the 'ul' element */
+   ul {
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+   }
+
+   /* Decreases the font size and adjusts the margin for the title */
+   .N-title {
+       font-size: 1.8rem;
+       margin-left: 5%;
+   }
+
+   /* Reduces the font size and adjusts the margin for the text block */
+   #text {
+       font-size: 0.9rem;
+       margin-left: 5%;
+   }
+
+   /* Resizes the button to 30% width for better mobile usability */
+   .N-button {
+       width: 30%;
+   }
+
+   /* Expands the search input to take up most of the container */
+   #N-search {
+       width: 90%; 
+   }
+
+   /* Modifies the layout of the N-container, using grid layout with 2 columns and 3 rows */
+   .N-container {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr); 
+       grid-template-rows: repeat(3, 1fr); 
+       gap: 10px; 
+       margin: 0 auto; 
+       width: 80%; 
+       z-index: 3;
+       margin-top: 10rem;
+   }
+
+   /* Ensures icons fit in the available space and maintain aspect ratio */
+   .N-icon {
+       width: 100%;
+       height: auto; 
+       object-fit: cover;
+   }
+
+   /* Organizes the icons in a 2-column grid */
+   .N-icons {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr); 
+       gap: 10px; 
+       max-width: 100%; 
+       margin: 0 auto; 
+       z-index: 3;
+   }
+
+   /* Hides the search container for smaller screens */
+   .N-search-container {
+       display: none;
+   }
+
+   /* Adds spacing to the text for better mobile layout */
+   #text {
+       margin-top: 2rem;
+   }
+
+   /* Hides elements related to the phone UI for small screens */
+   .N-screen, .N-phone, .card, .pay-rec, .card-info, .email-box, 
+   .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rec2, 
+   .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, 
+   .stat-img, .stat1-img, .N-phone-background-fade {
+       display: none;
+   }
+   .N-paralelogrami{
+       width: 100%;
+   }
+}
+
+/* For even smaller screens (600px) */
+@media (max-width: 600px) {
+   /* Hides the button and navigation menu on very small screens */
+   
+   .N-button, .N-list, .N-screen {
+       display: none;
+   }
+   .N-paralelogrami{
+       width: 100%;
+   }
+}
+
+/* For extremely small screens (480px or less) */
+@media (max-width: 480px) {
+   /* Hides the navigation list on the smallest screens */
+   
+   .N-list {
+       display: none;
+   }
+   .N-paralelogrami{
+       width: 100%;
+   }
+
+   /* Adjusts the font size and margin for the title */
+   .N-title {
+       font-size: 1.5rem; 
+       margin-left: 5%;
+   }
+
+   /* Adjusts the font size and margin for the text */
+   #text {
+       font-size: 0.8rem;
+       margin-left: 5%;
+   }
+
+   /* Hides the button on smaller screens */
+   .N-button {
+       display: none;
+   }
+
+   /* Adjusts the search input width to fit smaller screens */
+   #N-search {
+       width: 80%; 
+   }
+
+   /* Modifies the grid layout for icons, reducing to 2 columns */
+   .N-icons {
+       grid-template-columns: 1fr 1fr; 
+   }
+
+   /* Hides all elements related to phone UI and other non-essential sections for small screens */
+   .N-screen, .N-phone, .card, .pay-rec, .card-info, .email-box, 
+   .number, .MM, .country, .U, .zip, .N-rec1, .pay-reck1, .N-rec2, 
+   .stat-rec, .N-rec, .volume, .yesterday, .numbers, .small-num, 
+   .stat-img, .stat1-img, .N-phone-background-fade {
+       display: none;
+   }
+}
+
+/* Animation for a moving gradient background effect */
+@keyframes moveGradient {
+   0% {
+       background-position: 0% 50%;  
+   }
+   50% {
+       background-position: 100% 50%; 
+   }
+   100% {
+       background-position: 0% 50%;  
+   }
+}
+#N-section{
+   transition: background-color 0.3s ease-in-out;
+}
+.N-launch {
+   font-family: 'Inter', sans-serif;
+   color: #5167FC;
+   font-weight: bold;
+   font-size: medium;
+   margin-top: 2rem;
+   margin-left: 1rem;
+}
+
+.N-low-header {
+   font-family: 'Inter', sans-serif;
+   margin-top: 2rem;
+   margin-left: 1rem;
+   font-weight: bold;
+}
+
+.N-launch-text {
+   font-family: 'Inter', sans-serif;
+   margin-top: 1rem;
+   margin-left: 1rem;
+}
+
+.N-boxes {
+   position: relative;
+   margin-top: 4rem;
+   width: 100%;
+}
+
+.N-first-box, .N-second-box, .N-third-box {
+   width: 270px;
+   height: 400px;
+   background-color: whitesmoke;
+   border-radius: 10px;
+   position: absolute;
+   transition: transform 0.3s ease-out;
+}
+/* Slide-in animation when hovered */
+.N-first-box:hover,
+.N-second-box:hover,
+.N-third-box:hover {
+   transform: translateY(-10px); /* Move the box upwards */
+}
+.N-first-box {
+   margin-left: 17rem;
+   
+}
+
+.N-second-box {
+   margin-left: 36rem;
+   
+}
+
+.N-third-box {
+ 
+  
+}
+
+
+
+.N-box-square {
+   width: 270px;
+   height: 200px;
+   background-color: wheat;
+   border-radius: 10px;
+   position: absolute;
+   top: 0;
+}
+
+.N-box-text1, .N-box-text2, .N-box-text3 {
+   font-family: 'Inter', sans-serif;
+   font-size: x-large;
+   position: absolute;
+   top: 14rem;
+   left: 3px;
+}
+
+.N-box-text1-text, .N-box-text2-text, .N-box-text3-text {
+   font-family: 'Inter', sans-serif;
+   position: absolute;
+   top: 18rem;
+   left: 3px;
+}
+
+.N-circle1, .N-circle2, .N-circle3 {
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   position: absolute;
+}
+
+.N-circle1 {
+   background-color: black;
+   top: 2rem;
+   left: 5rem;
+}
+
+.N-circle2 {
+   background-color: white;
+   top: 6rem;
+   left: 14rem;
+}
+
+.N-circle3 {
+   background-color: #5167FC;
+   top: 6.5rem;
+   left: 1rem;
+}
+
+#squarespace, #intuit {
+   color: white;
+   font-size: x-small;
+   margin-top: 2.3rem;
+}
+
+.N-second-square, .N-third-square {
+   width: 270px;
+   height: 200px;
+   background-color: wheat;
+   border-radius: 10px;
+}
+
+
+@media(max-width: 600px) {
+   /* Adjustments for mobile view */
+   .N-boxes {
+       position: relative;
+       margin-top: 2rem;
+   }
+
+   .N-first-box, .N-second-box, .N-third-box {
+       position: relative;
+       width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 2rem;
+   }
+
+  
+
+   .N-box-text1, .N-box-text2, .N-box-text3 {
+       position: relative;
+       top: auto;
+       left: auto;
+       margin-top: 1rem;
+       z-index: 4;
+   }
+   .N-box-text1{
+       transform: translateY(410%);
+   }
+   .N-second-square{
+       transform: translateY(-30%);
+   }
+   .N-box-text2, .N-box-text3{
+       transform: translateY(400%);
+   }
+   
+   .N-box-square, .N-second-square, .N-third-square{
+       width: 100%;
+   }
+   #squarespace {
+       transform: translateX(20%);
+   }
+   #intuit{
+       transform: translateX(35%);
+   }
+}
+/* 769px to 1024px range for tablet / smaller laptop screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+   .N-boxes {
+       display: flex;
+       justify-content: space-between; /* Adjust spacing between boxes */
+   }
+
+   .N-first-box, .N-second-box, .N-third-box {
+       width: 250px; /* Adjust width to fit the screen */
+       height: 380px; /* Adjust height accordingly */
+       margin-top: 4rem;
+   }
+
+   .N-box-text1, .N-box-text2, .N-box-text3 {
+       font-size: 1.2rem; /* Slightly smaller font size for tablets */
+   }
+
+   .N-box-text1-text, .N-box-text2-text, .N-box-text3-text {
+       font-size: 1rem; /* Smaller font size for text */
+   }
+
+   .N-circle1, .N-circle2, .N-circle3 {
+       width: 80px; /* Adjust circles to fit better */
+       height: 80px;
+   }
+
+   /* Adjusting the circle positions */
+   .N-circle1 {
+       top: 2rem;
+       left: 4rem;
+   }
+
+   .N-circle2 {
+       top: 6rem;
+       left: 12rem;
+   }
+
+   .N-circle3 {
+       top: 6.5rem;
+       left: 1rem;
+   }
+
+   #squarespace, #intuit {
+       font-size: small; /* Adjust font size of text in circles */
+       margin-top: 2.5rem;
+   }
+}
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   list-style: none;
+}
+
+.footer-1 ul  {
+  flex-direction: column;
+   display: flex;
+   justify-content: space-between;
+   font-family: 'Inter', sans-serif;
+}
+
+/* Styling each footer column to stack the ul's vertically */
+.footer-column {
+   flex: 1;
+   margin: 10px; /* Adding spacing between columns */
+}
+
+/* Styling the heading in each column */
+#N-h1 {
+  margin-right: 500px;
+   color: seagreen;
+   font-family: 'Inter', sans-serif;
+   text-align: center;
+}
+
+/* Address section */
+address {
+   font-family: 'Inter', sans-serif;
+   text-align: center;
+   margin-top: 20px;
+}
+
+/* For large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+   .footer-1 {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+       gap: 30px;
+   }
+
+   /* Ensure h1 title stays in the first column */
+   #N-h1 {
+       text-align: center;
+       grid-column: 1 / -1; /* Span across all three columns */
+   }
+
+   /* Stack the ul items under each other */
+   .footer-column ul {
+       margin-bottom: 20px;
+   }
+
+   .footer-column {
+       display: flex;
+       flex-direction: column; /* Stack ul's vertically */
+   }
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+   .footer-1 {
+       display: grid; /* Change to grid for better control of columns */
+       grid-template-columns: 1fr 1fr; /* Two columns layout */
+       gap: 20px;
+   }
+
+   #N-h1 {
+       grid-column: span 2; /* Span across both columns */
+       text-align: center;
+   }
+
+   /* Stack the ul items under each other */
+   .footer-column ul {
+       margin-bottom: 20px;
+   }
+
+   .footer-column {
+       display: flex;
+       flex-direction: column; /* Stack ul's vertically */
+   }
+}
+
+/* For mobile (max-width: 600px) */
+@media (max-width: 600px) {
+   .footer-1 {
+       display: block; /* One column layout */
+   }
+
+   #N-h1 {
+       text-align: center;
+       margin-bottom: 20px;
+   }
+
+   /* Stack the ul items under each other */
+   ul {
+       margin-bottom: 15px;
+   }
+
+   address {
+       margin-top: 30px;
+       text-align: center;
+   }
+}
+
+/* footer{
+   margin-top: 700px;
+} */
+   
+ 
+
